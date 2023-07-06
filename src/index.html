@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Select All Checkboxes Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h2>Checkbox Example</h2>
+  
+  <input type="checkbox" id="selectAll"> <label for="selectAll">Select All</label>
+  
+  <br><br>
+  
+  <input type="checkbox" class="checkbox"> Checkbox 1
+  <br>
+  <input type="checkbox" class="checkbox"> Checkbox 2
+  <br>
+  <input type="checkbox" class="checkbox"> Checkbox 3
+  <br>
+  <input type="checkbox" class="checkbox"> Checkbox 4
+  
+  <script>
+    $(document).ready(function() {
+      $('#selectAll').on('change', function() {
+        if ($(this).is(':checked')) {
+          $('.checkbox').prop('checked', true);
+        } else {
+          $('.checkbox').prop('checked', false);
+        }
+      });
+    });
+  </script>
+</body>
+</html>

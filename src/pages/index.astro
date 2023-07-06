@@ -1,0 +1,2258 @@
+---
+import Layout from "../layouts/Layout.astro";
+import '../styles.css'
+import Card from "../components/Card.astro";
+import { Image, Picture } from "@astrojs/image/components";
+import banner_image from "../../public/banner.png";
+const erpnext_servicenow = true;
+const toggleState = true;
+---
+
+<Layout title="Home">
+	<main>
+		<!-- <section class="h-[calc(100vh-10vh)] relative"> -->
+		<!-- <div
+				class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap justify-center justify-items-center items-center my-10"
+			>
+				<div class="sm:w-full md:w-8/12 lg:w-8/12">
+					<h1
+						class="text-[4rem] text-[#31393C] font-semibold leading-[64px]"
+					>
+						The Leading ERPNext & ServiceNow Company!
+					</h1>
+					<p class="text[#31393C] leading-7 text-lg mt-5">
+						Sanskar Technolabs can help you simplify your business <br
+						/> operations by leveraging one-of-a-kind platforms!
+					</p>
+					<div
+						class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-72"
+					>
+						<a href="#" class="text-white font-semibold"
+							>Book a free demo now!</a
+						>
+						<img src="../../public/right.svg" />
+					</div>
+				</div>
+
+				<img
+					src="../../public/banner.png"
+					alt="banner image"
+					class="sm:w-full md:w-4/12 lg:w-4/12"
+				/>
+			</div> -->
+
+		<!-- <div class="flex flex-wrap mx-5 md:max-w-7xl md:mx-auto md:px-24">
+				<div
+					class="sm:w-full md:w-8/12 lg:w-8/12 font-semibold text-[#31393C] sm:mt-5 md:mt-56"
+				>
+					<h1
+						class="text-[4rem] text-[#31393C] font-semibold leading-[64px]"
+					>
+						The Leading ERPNext & ServiceNow Company!
+					</h1>
+					<p class="text[#31393C] leading-7 text-lg mt-5">
+						Sanskar Technolabs can help you simplify your business <br
+						/> operations by leveraging one-of-a-kind platforms!
+					</p>
+					<div
+						class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-72"
+					>
+						<a href="#" class="text-white font-semibold"
+							>Book a free demo now!</a
+						>
+						<img src="../../public/right.svg" class="ml-0" />
+					</div>
+				</div>
+				<div
+					class="sm:w-full md:w-4/12 lg:w-4/12 sm:grid md:absolute lg:absolute right-0"
+				>
+					<img
+						src="../../public/banner.png"
+						alt="banner image"
+						class=""
+					/>
+				</div>
+			</div>
+		</section> -->
+
+		<section class="hidden lg:flex h-[calc(100vh-10vh)] relative flex-wrap items-center">
+			<img
+				class="absolute right-0 w-5/12"
+				src="../../public/banner.png"
+				alt="banner image"
+				class=""
+			/>
+			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex">
+				<div class="w-7/12">
+					<h1
+						class=" text-[3.5rem] text-[#31393C] font-semibold leading-[4rem]"
+					>
+						The Leading ERPNext & ServiceNow Company!
+					</h1>
+					<p class="text[#31393C] leading-7 text-lg mt-5">
+						Sanskar Technolabs can help you simplify your business <br
+						/> operations by leveraging one-of-a-kind platforms!
+					</p>
+					<div
+						class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 md:w-72 sm:w-auto"
+					>
+						<a href="#" class="text-white font-semibold font-inter"
+							>Book a free demo now!</a
+						>
+						<img src="../../public/right.svg" class="ml-0" />
+					</div>
+					</div>
+			</div>
+		</section>
+
+		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 md:flex lg:hidden flex-wrap items-center mt-10 mb-20">
+			<div class="">
+				<div
+					class="text-4xl text-[#31393C] font-semibold "
+				>
+					The Leading ERPNext & ServiceNow Company!
+			</div>
+				<p class="text[#31393C] leading-7 text-lg mt-5">
+					Sanskar Technolabs can help you simplify your business <br
+					/> operations by leveraging one-of-a-kind platforms!
+				</p>
+				<div
+					class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-auto md:w-72"
+				>
+					<a href="#" class="text-white font-semibold font-inter"
+						>Book a free demo now!</a
+					>
+					<img src="../../public/right.svg" class="ml-0" />
+				</div>
+			</div>
+			<img
+				src="../../public/banner.png"
+				alt="banner image"
+				class="mt-5"
+			/>
+		</section>
+
+		<!-- <div class="flex flex-wrap items-center mb-20 mt-10">
+			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 w-5/12 !ml-40">
+				<h1
+					class="text-[4rem] text-[#31393C] font-semibold leading-[64px]"
+				>
+					The Leading ERPNext & ServiceNow Company!
+				</h1>
+				<p class="text[#31393C] leading-7 text-lg mt-5">
+					Sanskar Technolabs can help you simplify your business <br
+					/> operations by leveraging one-of-a-kind platforms!
+				</p>
+				<div
+					class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-72"
+				>
+					<a href="#" class="text-white font-semibold"
+						>Book a free demo now!</a
+					>
+					<img src="../../public/right.svg" class="ml-0" />
+				</div>
+			</div>
+
+			<img
+				src="../../public/banner.png"
+				alt="banner image"
+				class="w-5/12"
+			/>
+		</div> -->
+
+		<section
+			class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10"
+		>
+			<div class="md:text-center sm:text-left">
+				<h2 class="text-4xl text-[#31393C] font-semibold">
+					Offering 360-degree ERPNext & ServiceNow services!
+				</h2>
+				<ul
+					class="text-xl text-[#3E96F4] font-semibold flex flex-wrap justify-center mt-5 mb-5"
+				>
+					<li class="ml-2">• Streamlined Management</li>
+					<li class="ml-2">• Better customer satisfaction</li>
+					<li class="ml-2">• Higher Revenues</li>
+				</ul>
+
+				<p class="text-[#31393C]">
+					Optimize your business processes, satisfy your customers,
+					and ultimately boost your revenues by leveraging the <br /> best-in-class
+					platform such as ERPNEXT or serviceNow and trusted implementation
+					partner.
+				</p>
+			</div>
+
+			<div class="mt-10 flex flex-wrap justify-center">
+				<div
+					class="drop-shadow-lg shadow mr-5 rounded-lg text-[#31393C] w-[12.5rem] h-[2.625rem] flex items-center justify-center"
+					id="erpnext1"
+				>
+					<button
+						class="text-[#3E96F4] text-lg px-10 py-2 font-semibold"
+						id="erpnext"
+					>
+						ERPNext
+					</button>
+				</div>
+				<!-- <div class="" id="erpnext1">
+					<button class="text-[#31393C] text-lg px-10 py-2 font-semibold" id="erpnext">
+						ERPNext
+					</button>
+				</div> -->
+
+				<!-- <div class="drop-shadow-lg shadow rounded-lg">
+							<button class="text-[#3E96F4] px-10 py-2 text-lg font-semibold">
+								ServiceNow
+							</button>
+						</div>
+					 -->
+				<div class="w-[12.5rem] h-[2.625rem] flex items-center justify-center" id="servicenow1">
+					<button
+						class="text-[#31393C] text-lg px-10 py-2 font-semibold"
+						id="servicenow"
+					>
+						ServiceNow
+					</button>
+				</div>
+			</div>
+
+			<div
+				class="shadow drop-shadow-lg lg:p-16 md:16 p-5 rounded-[20px] shadow1 md:mt-20 mt-10"
+				id="erpnext_c"
+			>
+				<h2 class="text-[1.75rem] text-[#31393C] font-semibold">
+					ERPNext - The Most Agile ERP on the Planet.
+				</h2>
+				<p class="text-lg mt-5 font-bold">ERPNext Modules</p>
+				<div class="flex flex-wrap mt-5">
+					<div
+						class="sm:mr-0 md:mr-0 lg:mr-14 sm:w-full md:w-full lg:w-7/12 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 items-center"
+					>
+						<div
+							class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow"
+						>
+							<img
+								src="../../public/FinancialAccounting.svg"
+								class="mr-2"
+							/><p>Financial Accounting</p>
+						</div>
+						<div
+							class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow"
+						>
+							<img
+								src="../../public/OrderManagement.svg"
+								class="mr-2"
+							/><p>Order Management</p>
+						</div>
+						<div
+							class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow"
+						>
+							<img
+								src="../../public/HR&payroll.svg"
+								class="mr-2"
+							/><p>HR & payroll</p>
+						</div>
+						<div
+							class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow"
+						>
+							<img
+								src="../../public/Manufacturing.svg"
+								class="mr-2"
+							/><p>Manufacturing</p>
+						</div>
+						<div
+							class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow"
+						>
+							<img src="../../public/CRM.svg" class="mr-2" /><p>
+								CRM
+							</p>
+						</div>
+						<div
+							class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow"
+						>
+							<img
+								src="../../public/Website.svg"
+								class="mr-2"
+							/><p>Website</p>
+						</div>
+						<div
+							class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow"
+						>
+							<img
+								src="../../public/Helpdesk.svg"
+								class="mr-2"
+							/><p>Helpdesk</p>
+						</div>
+						<div
+							class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow"
+						>
+							<img
+								src="../../public/AssetManagement.svg"
+								class="mr-2"
+							/><p>Asset Management</p>
+						</div>
+					</div>
+					<div
+						class="sm:w-full md:w-full lg:w-4/12 text-[#31393C] mt-5 md:mt-5 lg:mt-0"
+					>
+						<p>
+							ERPNEXT is the feature-rich all-in-one enterprise
+							resource planning (ERP) solution that empowers
+							businesses to streamline and optimize their
+							operations.
+						</p>
+						<p class="text-xl mt-5 mb-5 font-semibold">
+							Ready to leverage?
+						</p>
+						<p>
+							Then, reach out to Sanskar Technolabs. As an
+							official ERPNext services provider and top-notch
+							ServiceNow partner, we will understand your business
+							requirements and offer highly personalized
+							solutions.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="hidden shadow drop-shadow-lg lg:p-16 md:p-16 p-5 rounded-[20px] module-shadow  md:mt-20 mt-10"
+				id="servicenow_c"
+			>
+				<h2 class="text-[1.75rem] text-[#31393C] font-semibold">
+					Service Now - The Most Agile ERP on the Planet.
+				</h2>
+				<p class="text-lg mt-5 font-bold">Service Now Modules</p>
+				<div class="flex flex-wrap mt-5">
+					<div
+						class="sm:mr-0 md:mr-0 lg:mr-14 sm:w-full md:w-full lg:w-7/12 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 items-center"
+					>
+						<div
+							class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow"
+						>
+							<img
+								src="../../public/FinancialAccounting.svg"
+								class="mr-2"
+							/><p>Financial Accounting</p>
+						</div>
+						<div
+							class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow"
+						>
+							<img
+								src="../../public/OrderManagement.svg"
+								class="mr-2"
+							/><p>Order Management</p>
+						</div>
+						<div
+							class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow"
+						>
+							<img
+								src="../../public/HR&payroll.svg"
+								class="mr-2"
+							/><p>HR & payroll</p>
+						</div>
+						<div
+							class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow"
+						>
+							<img
+								src="../../public/Manufacturing.svg"
+								class="mr-2"
+							/><p>Manufacturing</p>
+						</div>
+						<div
+							class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow"
+						>
+							<img src="../../public/CRM.svg" class="mr-2" /><p>
+								CRM
+							</p>
+						</div>
+						<div
+							class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow"
+						>
+							<img
+								src="../../public/Website.svg"
+								class="mr-2"
+							/><p>Website</p>
+						</div>
+						<div
+							class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow"
+						>
+							<img
+								src="../../public/Helpdesk.svg"
+								class="mr-2"
+							/><p>Helpdesk</p>
+						</div>
+						<div
+							class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow"
+						>
+							<img
+								src="../../public/AssetManagement.svg"
+								class="mr-2"
+							/><p>Asset Management</p>
+						</div>
+					</div>
+					<div
+						class="sm:w-full md:w-full lg:w-4/12 text-[#31393C] mt-5 md:mt-5 lg:mt-0"
+					>
+						<p>
+							Service Now is the feature-rich all-in-one
+							enterprise resource planning (ERP) solution that
+							empowers businesses to streamline and optimize their
+							operations.
+						</p>
+						<p class="text-xl mt-5 mb-5 font-semibold">
+							Ready to leverage?
+						</p>
+						<p>
+							Then, reach out to Sanskar Technolabs. As an
+							official Service Now services provider and top-notch
+							ServiceNow partner, we will understand your business
+							requirements and offer highly personalized
+							solutions.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="flex relative flex-wrap md:items-center sm:text-left lg:mt-40 md:mt-40 mt-10 flex-col-reverse mx-5">
+			<div class="md:absolute right-0 md:w-7/12 w-full">
+				<div class="overflow-x-scroll overflow-y-hidden custom-scrollbar">
+					<div class="flex gap-7">
+						<div
+							class="flex-shrink-0 bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] let-shadow w-64 h-64 mr-10"
+						>
+							<img src="../../public/calender.svg" />
+							<p
+								class="mt-14 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
+							>
+								12+
+							</p>
+							<p class="text-[#31393C] font-semibold">
+								Years of Serving
+							</p>
+						</div>
+						<div
+						class=" flex-shrink-0 bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] let-shadow w-64 h-64 mr-10"
+					>
+						<img src="../../public/dollar.svg" />
+						<p
+							class="mt-14 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
+						>
+							35%
+						</p>
+						<p class="text-[#31393C] font-semibold">
+							Client cost savings
+						</p>
+					</div>
+					<div
+						class=" flex-shrink-0 bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] let-shadow w-64 h-64 mr-10"
+					>
+						<img src="../../public/time.svg" />
+						<p
+							class="mt-14 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
+						>
+							20%
+						</p>
+						<p class="text-[#31393C] font-semibold">
+							Faster Time to Market
+						</p>
+					</div>
+					<div
+						class=" flex-shrink-0 bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] let-shadow w-64 h-64 mr-10"
+					>
+						<img src="../../public/rocket.svg" />
+						<p
+							class="mt-10 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
+						>
+							45%
+						</p>
+						<p class="text-[#31393C] font-semibold">
+							Boost in Overall Business Efficiency
+						</p>
+					</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="md:max-w-7xl md:mx-auto md:px-24 flex container mb-10">
+				<div class="md:w-3/12 sm:w-full">
+					<h1 class="text-4xl text-[#31393C] font-semibold">
+						Let our numbers do the talking!
+					</h1>
+				</div>
+			</div>
+		</section>
+
+		<section
+			class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10"
+		>
+			<div class="md:text-center sm:text-left md:mb-20">
+				<h2 class="text-4xl text-[#31393C] font-semibold">
+					Industries we have worked with so far!
+				</h2>
+			</div>
+			<div class="flex mt-5">
+				<img
+					class="flex-none"
+					src="../../public/previousbtn.svg"
+					id="preScrollButton"
+				/>
+				<div
+					class="grow h-14 flex gap-20 items-center justify-between overflow-x-scroll custom-scrollbar1 ml-10"
+					id="scrollContainer"
+				>
+					<div
+						class="drop-shadow-lg shadow rounded-lg mr-5 text-[#31393C]"
+						id="menuf1"
+					>
+						<button
+							class="text-[#3E96F4] px-10 py-2 font-semibold text-lg"
+							id="menuf">Manufacturing</button
+						>
+					</div>
+					<div class="mr-5" id="text1">
+						<button
+							class="text-[#31393C] px-10 py-2 font-semibold text-lg"
+							id="text">Textile</button
+						>
+					</div>
+					<div class="mr-5" id="health1">
+						<button
+							class="text-[#31393C] px-10 py-2 font-semibold text-lg"
+							id="health">Healthcare</button
+						>
+					</div>
+					<div class="mr-5" id="rent1">
+						<button class="text-[#31393C] px-10 py-2 font-semibold text-lg"
+							id="rent">Rental</button
+						>
+					</div>
+					<div class="mr-5" id="construction1">
+						<button
+							class="text-[#31393C] px-10 py-2 font-semibold text-lg"
+							id="construction">Construction</button
+						>
+					</div>
+					<div class="mr-5" id="crowdfunding1">
+						<button
+							class="text-[#31393C] px-10 py-2 font-semibold text-lg"
+							id="crowdfunding">Crowdfunding</button
+						>
+					</div>
+					<div class="mr-5" id="hr1">
+						<button
+							class="text-[#31393C] px-10 py-2 font-semibold text-lg whitespace-nowrap"
+							id="hr">Hr & Payroll</button
+						>
+					</div>
+					<div class="mr-5" id="ayurveda1">
+						<button
+							class="text-[#31393C] px-10 py-2 font-semibold text-lg"
+							id="ayurveda">Ayurveda</button
+						>
+					</div>
+				</div>
+				<img
+					class="flex-none"
+					src="../../public/nextbtn.svg"
+					id="nextScrollButton"
+				/>
+			</div>
+
+			<div
+				class="flex flex-wrap justify-items-center items-center"
+				id="menuf_c"
+			>
+				<!-- <div class="sm:w-full md:w-8/12 lg:w-8/12"> -->
+					<img src="../../public/manufacturing.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12" />
+				<!-- </div> -->
+				<div class="sm:w-full md:w-4/12 lg:w-4/12">
+					<p class="text-[1.75rem] text-[#31393C] font-semibold">
+						Manufacturing
+					</p>
+					<p class="mt-5">
+						We have worked with over 8+ manufacturing companies for end-to-end ERPNEXT implementation and they have <span class=" font-bold">saved up to 1000+ man hours,</span> with optimized production processes, inventory management, and supply chain operations.
+					</p>
+					<div
+						class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-36"
+					>
+						<a href="manufacturing" class="text-white font-semibold font-inter"
+							>learn more</a
+						>
+						<img src="../../public/right.svg" class="ml-0" />
+					</div>
+
+				</div>
+			</div>
+			<div
+				class="hidden flex-wrap justify-items-center items-center"
+				id="text_c"
+			>
+				<!-- <div class="sm:w-full md:w-8/12 lg:w-8/12"> -->
+					<img src="../../public/textile_i.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12" />
+				<!-- </div> -->
+				<div class="sm:w-full md:w-4/12 lg:w-4/12">
+					<p class="text-[1.75rem] text-[#31393C] font-semibold">
+						Textile
+					</p>
+					<p class="mt-5">
+						Our expertise in ERPNext and ServiceNow implementation for over 5 textile companies helped them <span class="font-bold">save over 20% of costs</span> by streamlining their operations and improving overall business efficiency.
+					</p>
+					<div
+						class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-36"
+					>
+						<a href="#" class="text-white font-semibold font-inter"
+							>learn more</a
+						>
+						<img src="../../public/right.svg" class="ml-0" />
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="hidden flex-wrap justify-items-center items-center"
+				id="health_c"
+			>
+				<!-- <div class="sm:w-full md:w-8/12 lg:w-8/12"> -->
+					<img src="../../public/healthcare.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12"/>
+				<!-- </div> -->
+				<div class="sm:w-full md:w-4/12 lg:w-4/12">
+					<p class="text-[1.75rem] text-[#31393C] font-semibold">
+						Healthcare
+					</p>
+					<p class="mt-5">
+						Our team has deployed comprehensive solutions for varied healthcare organizations - leading to <span class="font-bold">12% increase in overall business efficiency,</span> leading to better management of patient databases, billing, and overall operational workflows.
+					</p>
+					<div
+						class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-36"
+					>
+						<a href="#" class="text-white font-semibold font-inter"
+							>learn more</a
+						>
+						<img src="../../public/right.svg" class="ml-0" />
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="hidden flex-wrap justify-items-center items-center"
+				id="rent_c"
+			>
+				<!-- <div class="sm:w-full md:w-8/12 lg:w-8/12"> -->
+					<img src="../../public/retail.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12"/>
+				<!-- </div> -->
+				<div class="sm:w-full md:w-4/12 lg:w-4/12">
+					<p class="text-[1.75rem] text-[#31393C] font-semibold">
+						Retail
+					</p>
+					<p class="mt-5">
+						Retail stores have seen over <span class="font-bold">24% increase in customer satisfaction</span> after our ERPNEXT implementation services - through comprehensive store management, inventory tracking, customer relationship management, and billing processes.
+					</p>
+					<div
+						class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-36"
+					>
+						<a href="#" class="text-white font-semibold font-inter"
+							>learn more</a
+						>
+						<img src="../../public/right.svg" class="ml-0" />
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="hidden flex-wrap justify-items-center items-center"
+				id="construction_c"
+			>
+				<!-- <div class="sm:w-full md:w-8/12 lg:w-8/12"> -->
+					<img src="../../public/construction.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12"/>
+				<!-- </div> -->
+				<div class="sm:w-full md:w-4/12 lg:w-4/12">
+					<p class="text-[1.75rem] text-[#31393C] font-semibold">
+						Construction
+					</p>
+					<p class="mt-5">
+						We have implemented customized solutions for construction companies, helping them to <span class="font-bold">save their crucial business resources</span> with better management, tracking, billing and other financial aspects of their projects.
+					</p>
+					<div
+						class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-36"
+					>
+						<a href="#" class="text-white font-semibold font-inter"
+							>learn more</a
+						>
+						<img src="../../public/right.svg" class="ml-0" />
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="hidden flex-wrap justify-items-center items-center"
+				id="crowdfunding_c"
+			>
+				<!-- <div class="sm:w-full md:w-8/12 lg:w-8/12"> -->
+					<img src="../../public/crowdfunding.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12"/>
+				<!-- </div> -->
+				<div class="sm:w-full md:w-4/12 lg:w-4/12">
+					<p class="text-[1.75rem] text-[#31393C] font-semibold">
+						Crowdfunding
+					</p>
+					<p class="mt-5">
+						We have developed a full-fledged crowdfunding platform connecting NGOs and donors with best-in-class functionalities, easy navigation and secure payments. Through that platform and its easy navigation, <span class="font-bold">NGOs have raised over 60cr in just one week.</span>
+					</p>
+					<div
+						class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-36"
+					>
+						<a href="#" class="text-white font-semibold font-inter"
+							>learn more</a
+						>
+						<img src="../../public/right.svg" class="ml-0" />
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="hidden flex-wrap justify-items-center items-center"
+				id="hr_c"
+			>
+				<!-- <div class="sm:w-full md:w-8/12 lg:w-8/12"> -->
+					<img src="../../public/hr.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12"/>
+				<!-- </div> -->
+				<div class="sm:w-full md:w-4/12 lg:w-4/12">
+					<p class="text-[1.75rem] text-[#31393C] font-semibold">
+						Human Resources
+					</p>
+					<p class="mt-5">
+						Human Resources and consulting companies who have collaborated with us have <span class="font-bold">saved 29% in costs and over 850+ man hours</span> through automation for recruitment processes, onboarding, performance management, etc.
+					</p>
+					<div
+						class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-36"
+					>
+						<a href="#" class="text-white font-semibold font-inter"
+							>learn more</a
+						>
+						<img src="../../public/right.svg" class="ml-0" />
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="hidden flex-wrap justify-items-center items-center"
+				id="ayurveda_c"
+			>
+				<!-- <div class="sm:w-full md:w-8/12 lg:w-8/12"> -->
+					<img src="../../public/ayurveda.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12"/>
+				<!-- </div> -->
+				<div class="sm:w-full md:w-4/12 lg:w-4/12">
+					<p class="text-[1.75rem] text-[#31393C] font-semibold">
+						Ayurveda
+					</p>
+					<p class="mt-5">
+						We have catered to the unique requirements of a few Ayurvedic companies, who have experienced a <span class="font-bold">38% surge in total orders</span> through our effective categorizations, database management, inventory tracking and operations.
+					</p>
+					<div
+						class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-36"
+					>
+						<a href="#" class="text-white font-semibold font-inter"
+							>learn more</a
+						>
+						<img src="../../public/right.svg" class="ml-0" />
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section
+			class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10 md:text-center sm:text-left"
+		>
+			<div class="md:text-center sm:text-left md:mb-20">
+				<h2 class="text-4xl text-[#31393C] font-semibold">
+					Personalized Integration Hub - Access all your tools at one
+					place.
+				</h2>
+				<p class="text-[#31393C] font-semibold text-base mt-5">
+					Let Sanskar Technolab streamline your business operations
+					with on-the-go integrations.
+				</p>
+			</div>
+			<div class="hidden lg:flex flex-wrap justify-between mt-10">
+				<img src="../../public/paypal.svg" />
+				<img src="../../public/dropbox.svg" />
+				<img src="../../public/razorpay.svg" />
+				<img src="../../public/stripe.svg" />
+				<img src="../../public/slack.svg" />
+			</div>
+			<div class="hidden lg:flex flex-wrap justify-between mt-10">
+				<img src="../../public/google.svg" />
+				<img src="../../public/shopify.svg" />
+				<img src="../../public/woocommerce.svg" />
+				<img src="../../public/sendGrid.svg" />
+				<img src="../../public/strip.svg" />
+				<img src="../../public/aws.svg" />
+			</div>
+			<div
+				class="hidden lg:flex flex-wrap justify-between mt-10 sm:mx-auto md:mx-40"
+			>
+				<img src="../../public/unicommerce.svg" />
+				<img src="../../public/outlook.svg" />
+				<img src="../../public/insta.svg" />
+				<img src="../../public/twitter.svg" />
+				<img src="../../public/whatsapp.svg" />
+				<img src="../../public/linkedin.svg" />
+			</div>
+
+			<div
+				class="flex md:flex lg:hidden flex-wrap md:justify-center mt-10 gap-9"
+			>
+				<img src="../../public/paypal.svg" />
+				<img src="../../public/dropbox.svg" />
+				<img src="../../public/razorpay.svg" />
+				<img src="../../public/stripe.svg" />
+				<img src="../../public/slack.svg" />
+				<!-- </div>
+			<div class="flex lg:hidden flex-wrap justify-between mt-10"> -->
+				<img src="../../public/google.svg" />
+				<img src="../../public/shopify.svg" />
+				<img src="../../public/woocommerce.svg" />
+				<img src="../../public/sendGrid.svg" />
+				<img src="../../public/strip.svg" />
+				<img src="../../public/aws.svg" />
+				<!-- </div>
+			<div
+				class="flex lg:hidden flex-wrap justify-between mt-10 sm:mx-auto md:mx-40"
+			> -->
+				<img src="../../public/unicommerce.svg" />
+				<img src="../../public/outlook.svg" />
+				<img src="../../public/insta.svg" />
+				<img src="../../public/twitter.svg" />
+				<img src="../../public/whatsapp.svg" />
+				<img src="../../public/linkedin.svg" />
+			</div>
+
+			<div
+				class="flex flex-wrap justify-between items-center mt-10 sm:mx-auto md:mx-56"
+			>
+				<div class="text-[#31393C] text-base font-semibold">
+					Can’t see your required integration tool here?
+				</div>
+				<div
+					class="flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-52 sm:mt-5"
+				>
+					<a href="#" class="text-white font-semibold font-inter">We can help!</a
+					>
+					<img src="../../public/right.svg" />
+				</div>
+			</div>
+		</section>
+
+		<section
+			class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-20"
+		>
+			<div
+				class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5"
+			>
+				<div
+					class="bg-[url('../../public/bg.svg')] bg-no-repeat grid gap-2"
+				>
+					<p
+						class="text-4xl leading-[44px] text-[#31393C] font-semibold"
+					>
+						Move beyond traditional softwares with these
+						one-of-a-kind tools!
+					</p>
+					<div class="text-[#31393C] text-base font-semibold mt-36">
+						Regardless of your industry, we have got you covered.
+					</div>
+					<div
+						class="flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 md:w-72 sm:w-auto"
+					>
+						<a href="#" class="text-white font-semibold font-inter"
+							>Schedule a call back now!</a
+						>
+						<img src="../../public/right.svg" />
+					</div>
+				</div>
+
+				<div class="bg-[#EBF5FF] rounded-[20px] lg:p-5 md:p-5 p-2 grid gap-3">
+					<div class="text-[#31393C] font-semibold text-[1.75rem]">
+						ERPNext
+					</div>
+					<div
+						class="flex bg-white rounded-lg p-2 items-center gap-2"
+					>
+						<img src="../../public/cost-efective.svg" />
+						<p class="text-[#31393C] text-base leading-4">
+							Cost-effective solution
+						</p>
+					</div>
+					<div
+						class="flex bg-white rounded-lg p-2 items-center gap-2"
+					>
+						<img src="../../public/user-friendly.svg" />
+						<p class="text-[#31393C] text-base leading-4">
+							User-friendly interface
+						</p>
+					</div>
+					<div
+						class="flex bg-white rounded-lg p-2 items-center gap-2"
+					>
+						<img src="../../public/easy-customized.svg" />
+						<p class="text-[#31393C] text-base leading-4">
+							Easy customization
+						</p>
+					</div>
+					<div
+						class="flex bg-white rounded-lg p-2 items-center gap-2"
+					>
+						<img src="../../public/robust.svg" />
+						<p class="text-[#31393C] text-base leading-4">
+							Robust security features
+						</p>
+					</div>
+					<div
+						class="flex bg-white rounded-lg p-2 items-center gap-2"
+					>
+						<img src="../../public/scalable.svg" />
+						<p class="text-[#31393C] text-base leading-4">
+							Highly Scalable architecture
+						</p>
+					</div>
+					<div
+						class="flex bg-white rounded-lg p-2 items-center gap-2"
+					>
+						<img src="../../public/mobile-friendly.svg" />
+						<p class="text-[#31393C] text-base leading-4">
+							Mobile-friendly
+						</p>
+					</div>
+				</div>
+
+				<div class="bg-[#EBF5FF] rounded-[20px] lg:p-5 md:p-5 p-2 grid gap-3">
+					<div class="text-[#31393C] font-semibold text-[1.75rem]">
+						ServiceNow
+					</div>
+					<div
+						class="flex bg-white rounded-lg p-2 items-center gap-2"
+					>
+						<img src="../../public/it-service.svg" />
+						<p class="text-[#31393C] text-base leading-4">
+							IT service management capabilities
+						</p>
+					</div>
+					<div
+						class="flex bg-white rounded-lg p-2 items-center gap-2"
+					>
+						<img src="../../public/communication.svg" />
+						<p class="text-[#31393C] text-base leading-4">
+							Enhanced collaboration and communication
+						</p>
+					</div>
+					<div
+						class="flex bg-white rounded-lg p-2 items-center gap-2"
+					>
+						<img src="../../public/easy-customized.svg" />
+						<p class="text-[#31393C] text-base leading-4">
+							Extensive customization options
+						</p>
+					</div>
+					<div
+						class="flex bg-white rounded-lg p-2 items-center gap-2"
+					>
+						<img src="../../public/analytics.svg" />
+						<p class="text-[#31393C] text-base leading-4">
+							Advanced analytics and reporting
+						</p>
+					</div>
+					<div
+						class="flex bg-white rounded-lg p-2 items-center gap-2"
+					>
+						<img src="../../public/robust.svg" />
+						<p class="text-[#31393C] text-base leading-4">
+							Robust security
+						</p>
+					</div>
+					<div
+						class="flex bg-white rounded-lg p-2 items-center gap-2"
+					>
+						<img src="../../public/integration.svg" />
+						<p class="text-[#31393C] text-base leading-4">
+							Integrated suite of enterprise-level solution
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section
+			class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10 text-center"
+		>
+			<div class="text-center md:mb-20">
+				<h2 class="text-4xl text-[#31393C] font-semibold">
+					Why Choose Us…
+				</h2>
+				<p class="text-[#31393C] font-bold mt-5">
+					As your Implementation Partner?
+				</p>
+			</div>
+			<div
+				class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:gap-24 md:gap-24 gap-10 justify-items-center"
+			>
+				<div class="grid justify-items-center">
+					<img src="../../public/industry-rich-expertise.svg" />
+					<div class="text-xl text-[#31393C] font-semibold my-3">
+						Industry-rich expertise
+					</div>
+					<p class="text-base">
+						With extensive experience across various industries, we
+						tailor our solutions to meet our client's unique
+						requirements and challenges.
+					</p>
+				</div>
+				<div class="grid justify-items-center">
+					<img src="../../public/cost-saving.svg" />
+					<div class="text-xl text-[#31393C] font-semibold my-3">
+						Cost savings
+					</div>
+					<p class="text-base">
+						We offer ERPNext and ServiceNow implementation services
+						at cost-effective rates, ensuring affordability without
+						compromising quality.
+					</p>
+				</div>
+				<div class="grid justify-items-center">
+					<img src="../../public/update-development.svg" />
+					<div class="text-xl text-[#31393C] font-semibold my-3">
+						Best and updated development practices
+					</div>
+					<p class="text-base">
+						We follow the industry's best and latest implementation
+						methodologies to deliver robust, adaptable, and
+						future-proof solutions.
+					</p>
+				</div>
+				<div class="grid justify-items-center">
+					<img src="../../public/timely.svg" />
+					<div class="text-xl text-[#31393C] font-semibold my-3">
+						Timely delivery
+					</div>
+					<p class="text-base">
+						Our efficient project management practices and clear
+						communication ensure that your ERPNext and ServiceNow
+						implementations are completed within agreed-upon
+						timeframes.
+					</p>
+				</div>
+				<div class="grid justify-items-center">
+					<img src="../../public/project-manager.svg" />
+					<div class="text-xl text-[#31393C] font-semibold my-3">
+						Dedicated project manager
+					</div>
+					<p class="text-base">
+						With a dedicated project manager assigned to your
+						implementation, you receive personalized attention,
+						streamlined communication, efficient coordination, and
+						satisfactory results.
+					</p>
+				</div>
+				<div class="grid justify-items-center">
+					<img src="../../public/support.svg" />
+					<div class="text-xl text-[#31393C] font-semibold my-3">
+						Post-project support
+					</div>
+					<p class="text-base">
+						Our dedicated support team provides comprehensive
+						assistance after project completion, addressing any
+						issues that may arise while ensuring smooth operations.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- <section class="absolute" id="grad1"></section> -->
+		<section
+			class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10"
+		>
+			<div class="md:text-center sm:text-left md:mb-20">
+				<h2 class="text-4xl text-[#31393C] font-semibold">
+					Our Happy Customers.
+				</h2>
+				<p class="text-[#31393C] font-semibold mt-5 text-base">
+					Customer Satisfaction drives us!
+				</p>
+			</div>
+
+			<div class="happy-customer-shadow md:p-10 p-5 rounded-[20px] slideshow md:h-[23rem] h-[33rem] mt-5">
+				<div
+					class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 slide"
+				>
+					<img class="pr-5" src="../../public/customer.svg" />
+					<div class="text-[#31393C]">
+						<p class="text-xl leading-9 font-semibold my-3">
+							Osswal Infosystems
+						</p>
+						<p class="text-base pr-5">
+							Watch Mohit Nagori, Director of Osswal Infosystems
+							Pvt. Ltd., speak about his company's journey with
+							SAP and UBS. He shares insights about our
+							collaboration and how to make a successful
+							partnership work!
+						</p>
+						<p class="text-base font-semibold mt-5">Mohit Nagori</p>
+						<p class="text-sm">
+							Director, Osswal Infosystems Pvt. Ltd.
+						</p>
+					</div>
+				</div>
+
+				<div
+					class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 slide"
+				>
+					<img class="pr-5" src="../../public/customer.svg" />
+					<div class="text-[#31393C]">
+						<p class="text-xl leading-9 font-semibold my-3">
+							Osswal Infosystems 2
+						</p>
+						<p class="text-base pr-5">
+							2. Watch Mohit Nagori, Director of Osswal
+							Infosystems Pvt. Ltd., speak about his company's
+							journey with SAP and UBS. He shares insights about
+							our collaboration and how to make a successful
+							partnership work!
+						</p>
+						<p class="text-base font-semibold mt-5">Mohit Nagori</p>
+						<p class="text-sm">
+							Director, Osswal Infosystems Pvt. Ltd.
+						</p>
+					</div>
+				</div>
+
+				<div
+					class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 slide"
+				>
+					<img class="pr-5" src="../../public/customer.svg" />
+					<div class="text-[#31393C]">
+						<p class="text-xl leading-9 font-semibold my-3">
+							Osswal Infosystems 3
+						</p>
+						<p class="text-base pr-5">
+							3. Watch Mohit Nagori, Director of Osswal
+							Infosystems Pvt. Ltd., speak about his company's
+							journey with SAP and UBS. He shares insights about
+							our collaboration and how to make a successful
+							partnership work!
+						</p>
+						<p class="text-base font-semibold mt-5">Mohit Nagori</p>
+						<p class="text-sm">
+							Director, Osswal Infosystems Pvt. Ltd.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex justify-center gap-3 mt-10">
+				<img src="../../public/previousbtn.svg" id="preBtn" />
+				<img src="../../public/nextbtn.svg" id="nextBtn" />
+			</div>
+		</section>
+
+		<section
+			class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10"
+		>
+			<div
+				class="hidden md:block lg:block bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-5 shadow drop-shadow-sm"
+			>
+				<h2 class="text-[1.75rem] font-semibold mb-5 ml-3 leading-9">
+					Frequently Asked Questions (FAQs)
+				</h2>
+				<div class="flex flex-wrap">
+					<div class="sm:w-full md:w-5/12 lg:w-5/12">
+						<div
+							class="bg-white rounded-l-lg p-3 mb-3"
+							id="faq11"
+						>
+							<button class="text-base leading-[22px]" id="faq1">
+								Why should I pick ERPNext over other ERP
+								products?
+							</button>
+						</div>
+						<div class="bg-[#B3B3B3] rounded-l-lg p-3 mb-3" id="faq21">
+							<button class="text-base leading-[22px]" id="faq2">
+								How long does my implementation project usually
+								take?
+							</button>
+						</div>
+						<div class="bg-[#B3B3B3] rounded-l-lg p-3 mb-3" id="faq31">
+							<button class="text-base leading-[22px]" id="faq3">
+								Do you provide a free demo before getting
+								started?
+							</button>
+						</div>
+						<div
+							class="bg-[#B3B3B3] rounded-l-lg p-3 mb-3"
+							id="faq41"
+						>
+							<button class="text-base leading-[22px]" id="faq4">
+								What is your implementation process?
+							</button>
+						</div>
+					</div>
+
+					<div
+						class="sm:w-full md:w-7/12 lg:w-7/12 bg-white rounded-r-[10px] p-8"
+						id="faq1_c"
+					>
+						<p class="text-xl leading-9 font-semibold mb-7">
+							Why should I pick ERPNext over other ERP products?
+						</p>
+						<p class="text-base mb-7">
+							ERPNext is an open-source low-code platform with
+							various modules to cater to diverse industries and
+							their needs.
+						</p>
+						<p class="text-base font-semibold">
+							Here are out-of-the-box benefits of the ERPNext
+							platform -
+						</p>
+						<div class="flex items-center gap-2 ml-2">
+							<div
+								class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+							>
+							</div>
+							<p class="text-base leading-7">
+								Streamlined operations and improved efficiency
+							</p>
+						</div>
+						<div class="flex items-center gap-2 ml-2">
+							<div
+								class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+							>
+							</div>
+							<p class="text-base leading-7">
+								Centralized data management and accessibility
+							</p>
+						</div>
+						<div class="flex items-center gap-2 ml-2">
+							<div
+								class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+							>
+							</div>
+							<p class="text-base leading-7">
+								Better decision-making through real-time
+								insights
+							</p>
+						</div>
+						<div class="flex items-center gap-2 ml-2">
+							<div
+								class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+							>
+							</div>
+							<p class="text-base leading-7">
+								Automation of repetitive tasks
+							</p>
+						</div>
+						<div class="flex items-center gap-2 ml-2">
+							<div
+								class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+							>
+							</div>
+							<p class="text-base leading-7">
+								Enhanced customer service and satisfaction
+							</p>
+						</div>
+					</div>
+
+					<div
+						class="hidden sm:w-full md:w-7/12 lg:w-7/12 bg-white rounded-r-[10px] p-8"
+						id="faq2_c"
+					>
+						<p class="text-xl leading-9 font-semibold mb-7">
+							Why should I pick ERPNext over other ERP products?
+							in faq2
+						</p>
+						<p class="text-base mb-7">
+							ERPNext is an open-source low-code platform with
+							various modules to cater to diverse industries and
+							their needs.
+						</p>
+						<p class="text-base font-semibold">
+							Here are out-of-the-box benefits of the ERPNext
+							platform faq2 -
+						</p>
+						<div class="flex items-center gap-2 ml-2">
+							<div
+								class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+							>
+							</div>
+							<p class="text-base leading-7">
+								Streamlined operations and improved efficiency 2
+							</p>
+						</div>
+						<div class="flex items-center gap-2 ml-2">
+							<div
+								class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+							>
+							</div>
+							<p class="text-base leading-7">
+								Centralized data management and accessibility 2
+							</p>
+						</div>
+						<div class="flex items-center gap-2 ml-2">
+							<div
+								class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+							>
+							</div>
+							<p class="text-base leading-7">
+								Better decision-making through real-time
+								insights
+							</p>
+						</div>
+						<div class="flex items-center gap-2 ml-2">
+							<div
+								class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+							>
+							</div>
+							<p class="text-base leading-7">
+								Automation of repetitive tasks
+							</p>
+						</div>
+						<div class="flex items-center gap-2 ml-2">
+							<div
+								class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+							>
+							</div>
+							<p class="text-base leading-7">
+								Enhanced customer service and satisfaction
+							</p>
+						</div>
+					</div>
+
+					<div
+						class="hidden sm:w-full md:w-7/12 lg:w-7/12 bg-white rounded-r-[10px] p-8"
+						id="faq3_c"
+					>
+						<p class="text-xl leading-9 font-semibold mb-7">
+							Why should I pick ERPNext over other ERP products?
+							faq 3
+						</p>
+						<p class="text-base mb-7">
+							ERPNext is an open-source low-code platform with
+							various modules to cater to diverse industries and
+							their needs.
+						</p>
+						<p class="text-base font-semibold">
+							Here are out-of-the-box benefits of the ERPNext
+							platform -
+						</p>
+						<div class="flex items-center gap-2 ml-2">
+							<div
+								class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+							>
+							</div>
+							<p class="text-base leading-7">
+								Streamlined operations and improved efficiency 3
+							</p>
+						</div>
+						<div class="flex items-center gap-2 ml-2">
+							<div
+								class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+							>
+							</div>
+							<p class="text-base leading-7">
+								Centralized data management and accessibility 3
+							</p>
+						</div>
+						<div class="flex items-center gap-2 ml-2">
+							<div
+								class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+							>
+							</div>
+							<p class="text-base leading-7">
+								Better decision-making through real-time
+								insights
+							</p>
+						</div>
+						<div class="flex items-center gap-2 ml-2">
+							<div
+								class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+							>
+							</div>
+							<p class="text-base leading-7">
+								Automation of repetitive tasks
+							</p>
+						</div>
+						<div class="flex items-center gap-2 ml-2">
+							<div
+								class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+							>
+							</div>
+							<p class="text-base leading-7">
+								Enhanced customer service and satisfaction
+							</p>
+						</div>
+					</div>
+
+					<div
+						class="hidden sm:w-full md:w-7/12 lg:w-7/12 bg-white rounded-r-[10px] p-8"
+						id="faq4_c"
+					>
+						<p class="text-xl leading-9 font-semibold mb-7">
+							Why should I pick ERPNext over other ERP products?
+							faq4
+						</p>
+						<p class="text-base mb-7">
+							ERPNext is an open-source low-code platform with
+							various modules to cater to diverse industries and
+							their needs.
+						</p>
+						<p class="text-base font-semibold">
+							Here are out-of-the-box benefits of the ERPNext
+							platform -
+						</p>
+						<div class="flex items-center gap-2 ml-2">
+							<div
+								class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+							>
+							</div>
+							<p class="text-base leading-7">
+								Streamlined operations and improved efficiency 4
+							</p>
+						</div>
+						<div class="flex items-center gap-2 ml-2">
+							<div
+								class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+							>
+							</div>
+							<p class="text-base leading-7">
+								Centralized data management and accessibility 4
+							</p>
+						</div>
+						<div class="flex items-center gap-2 ml-2">
+							<div
+								class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+							>
+							</div>
+							<p class="text-base leading-7">
+								Better decision-making through real-time
+								insights 4
+							</p>
+						</div>
+						<div class="flex items-center gap-2 ml-2">
+							<div
+								class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+							>
+							</div>
+							<p class="text-base leading-7">
+								Automation of repetitive tasks 4
+							</p>
+						</div>
+						<div class="flex items-center gap-2 ml-2">
+							<div
+								class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+							>
+							</div>
+							<p class="text-base leading-7">
+								Enhanced customer service and satisfaction 4
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div x-data="{ accordion: 0 }" class="md:hidden grid gap-5 bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-5 shadow drop-shadow-sm">
+				<h2 class="text-[1.75rem] font-semibold ml-3 leading-9">
+					Frequently Asked Questions (FAQs)
+				</h2>
+				<div class="bg-white rounded-2xl">
+				<div class="flex justify-between p-5" @click="accordion = accordion == 0 ? 1 : 0">
+					<div class="cursor-pointer " >Why should I pick ERPNext over other ERP products?</div>
+				  <img :class="accordion === 1 ? 'block' : 'hidden'" src="../../public/down-arrow.svg" />
+				  <img :class="accordion !== 1 ? 'block' : 'hidden'" src="../../public/up-arrow.svg" />
+				</div>
+					<div class="overflow-hidden bg-white" :class="accordion !== 0 ? 'h-0' : 'border-t-4'">
+						<div
+									class="sm:w-full md:w-7/12 lg:w-7/12 bg-white rounded-r-[10px] p-8"
+									id="faq1_c"
+								>
+									<p class="text-base mb-7">
+										ERPNext is an open-source low-code platform with
+										various modules to cater to diverse industries and
+										their needs.
+									</p>
+									<p class="text-base font-semibold">
+										Here are out-of-the-box benefits of the ERPNext
+										platform -
+									</p>
+									<div class="flex items-center gap-2 ml-2">
+										<div
+											class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+										>
+										</div>
+										<p class="text-base leading-7">
+											Streamlined operations and improved efficiency
+										</p>
+									</div>
+									<div class="flex items-center gap-2 ml-2">
+										<div
+											class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+										>
+										</div>
+										<p class="text-base leading-7">
+											Centralized data management and accessibility
+										</p>
+									</div>
+									<div class="flex items-center gap-2 ml-2">
+										<div
+											class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+										>
+										</div>
+										<p class="text-base leading-7">
+											Better decision-making through real-time
+											insights
+										</p>
+									</div>
+									<div class="flex items-center gap-2 ml-2">
+										<div
+											class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+										>
+										</div>
+										<p class="text-base leading-7">
+											Automation of repetitive tasks
+										</p>
+									</div>
+									<div class="flex items-center gap-2 ml-2">
+										<div
+											class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5"
+										>
+										</div>
+										<p class="text-base leading-7">
+											Enhanced customer service and satisfaction
+										</p>
+									</div>
+								</div>
+					  </div>
+				</div>
+				 <div class="bg-white rounded-2xl">
+				<div class="flex justify-between p-5" @click="accordion = accordion == 2 ? 0 : 2">
+					<div class="cursor-pointer" >How long does my implementation project usually take?</div>
+				  <img :class="accordion !== 2 ? 'block' : 'hidden'" src="../../public/down-arrow.svg" />
+				  <img :class="accordion === 2 ? 'block' : 'hidden'" src="../../public/up-right.svg" />
+				</div>
+					<div class="overflow-hidden bg-white" :class="accordion !== 2 ? 'h-0' : 'border-t-4'">
+						<p class="p-3">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac hendrerit turpis. Etiam eu mattis tortor. Cras blandit sapien hendrerit libero tristique hendrerit. Curabitur tincidunt sollicitudin laoreet. Integer ultrices elementum tortor, quis dapibus tellus sodales quis. Nulla id elit vestibulum, blandit lorem at, rhoncus elit. Sed feugiat quam et sollicitudin pellentesque. Aliquam erat volutpat. Integer nec elementum odio, nec aliquam metus. Ut non mattis nunc.
+						</p>
+					  </div>
+				</div>
+				 <div class="bg-white rounded-2xl">
+				<div class="flex justify-between p-5" @click="accordion = accordion == 3 ? 0 : 3">
+					<div class="cursor-pointer" >Do you provide a free demo before getting started?</div>
+				  <img :class="accordion !== 3 ? 'block' : 'hidden'" src="../../public/down-arrow.svg" />
+				  <img :class="accordion === 3 ? 'block' : 'hidden'" src="../../public/up-right.svg" />
+				</div>
+					<div class="overflow-hidden bg-white" :class="accordion !== 3 ? 'h-0' : 'border-t-4'">
+						<p class="p-3">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac hendrerit turpis. Etiam eu mattis tortor. Cras blandit sapien hendrerit libero tristique hendrerit. Curabitur tincidunt sollicitudin laoreet. Integer ultrices elementum tortor, quis dapibus tellus sodales quis. Nulla id elit vestibulum, blandit lorem at, rhoncus elit. Sed feugiat quam et sollicitudin pellentesque. Aliquam erat volutpat. Integer nec elementum odio, nec aliquam metus. Ut non mattis nunc.
+						</p>
+					  </div>
+				</div>
+			  <div class="bg-white rounded-2xl">
+				<div class="flex justify-between p-5" @click="accordion = accordion == 4 ? 0: 4">
+					<div class="cursor-pointer" >What is your implementation process?</div>
+				  <img :class="accordion !== 4 ? 'block' : 'hidden'" src="../../public/down-arrow.svg" />
+				  <img :class="accordion === 4 ? 'block' : 'hidden'" src="../../public/up-right.svg" />
+				</div>
+					<div class="overflow-hidden bg-white" :class="accordion !== 4 ? 'h-0' : 'border-t-4'">
+						<p class="p-3">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac hendrerit turpis. Etiam eu mattis tortor. Cras blandit sapien hendrerit libero tristique hendrerit. Curabitur tincidunt sollicitudin laoreet. Integer ultrices elementum tortor, quis dapibus tellus sodales quis. Nulla id elit vestibulum, blandit lorem at, rhoncus elit. Sed feugiat quam et sollicitudin pellentesque. Aliquam erat volutpat. Integer nec elementum odio, nec aliquam metus. Ut non mattis nunc.
+						</p>
+					  </div>
+				</div>
+			</div>
+		</section>
+
+		<!-- <section class="flex lg:mt-40 md:mt-40 mt-10">
+			<img
+				src="../../public/form-bg.svg"
+				alt="Image description"
+				class=""
+			/>
+			<div class="bg-[#3E96F4] w-full mt-[8.6rem]">
+				<div class="max-w-4xl mx-auto mt-8 ml-64">
+					<h4 class="font-semibold text-white text-4xl">
+						Let's craft awesomeness together!
+					</h4>
+					<div
+						class="mt-5 flex justify-between bg-white rounded-lg px-5 py-3 w-56"
+					>
+						<a
+							href="#"
+							class="text-[#3E96F4] text-base font-semibold"
+							>Fill up a form now.</a
+						>
+						<img src="../../public/right.svg" class="ml-0" />
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+
+		<section class="bg-[#3E96F4] flex flex-wrap mt-40 relative ">
+			<div class="bg-[url(../../public/form-bg-3.png)] w-full md:w-5/12 bg-no-repeat bg-center bg-cover">
+				<img
+				src="../../public/form-bg.svg"
+				alt="Image description"
+				class="block md:absolute md:left-52 md:-top-32"
+			/>
+			</div>
+			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 w-full md:w-7/12 p-0 py-3 md:p-10">
+				<h4 class="font-semibold text-white text-4xl">
+					Let's craft awesomeness together!
+				</h4>
+				<div
+					class="mt-5 flex justify-between bg-white rounded-lg px-5 py-3 w-56"
+				>
+					<a
+						href="#"
+						class="text-[#3E96F4] text-base font-semibold font-inter"
+						>Fill up a form now.</a
+					>
+					<img src="../../public/right.svg" class="ml-0" />
+				</div>
+			</div>
+		</section>
+
+	</main>
+</Layout>
+<style>
+	.custom-scrollbar::-webkit-scrollbar {
+		width: 4px;
+		height: 4px;
+		background-color: #f3f3f3;
+	}
+
+	.custom-scrollbar::-webkit-scrollbar-thumb {
+		background-color: #c3c3c3;
+		border-radius: 4px;
+	}
+
+	/* For Firefox */
+	.custom-scrollbar {
+		scrollbar-width: thin;
+		scrollbar-color: #c3c3c3 #f3f3f3;
+	}
+
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
+	.no-scrollbar {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+
+	/*  slider */
+	.slideshow {
+		/* height: max-content; */
+		overflow: hidden;
+		position: relative;
+	}
+
+	.slide {
+		/* height: max-content; */
+		position: absolute;
+		opacity: 0;
+		transition: opacity 0.5s ease;
+	}
+
+	.slide.active {
+		opacity: 1;
+	}
+
+	.custom-scrollbar1::-webkit-scrollbar {
+		width: 0px;
+		height: 0px;
+		background-color: #f3f3f3;
+	}
+
+	.custom-scrollbar1::-webkit-scrollbar-thumb {
+		background-color: #c3c3c3;
+		border-radius: 1px;
+	}
+
+	/* For Firefox */
+	.custom-scrollbar1 {
+		scrollbar-width: thin;
+		scrollbar-color: #c3c3c3 #f3f3f3;
+	}
+
+	#grad1 {
+		width: 1440px;
+		height: 1440px;
+		flex-shrink: 0;
+		background-image: radial-gradient(
+			rgba(62, 150, 244, 0.15) 0%,
+			rgba(62, 150, 244, 0) 100%
+		);
+	}
+
+	.shadow1 {
+		box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.07);
+	}
+
+	.module-shadow {
+		box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.15);
+	}
+
+	.happy-customer-shadow {
+		box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.07);
+	}
+	.let-shadow{
+		border-radius: 10px;
+		border: 2px solid #FFF;
+		background: linear-gradient(135deg, #ECF5FF 0%, #FFF 100%);
+		box-shadow: 0px 0px 100px 0px rgba(62, 150, 244, 0.10) inset, 4px 4px 4px 0px rgba(62, 150, 244, 0.15);
+	}
+
+</style>
+
+<script>
+	// import ErpnextServicenow from "../components/erpnext-servicenow.astro";
+
+	// const buttons = document.querySelectorAll("button.erpnext_servicenow");
+
+	// Handle clicks on each button.
+	// buttons.forEach((button) => {
+	// 	button.addEventListener("click", () => {
+	// 		// alert('Button was clicked!');
+	// 		var menu = document.getElementById("erpnext_servicenow");
+	// 		menu.classList.toggle("!block");
+	// 	});
+	// });
+
+	// show erpnext content and hide other content when click on erpnext
+	function show_erpnext() {
+		document.getElementById("erpnext_c").classList.remove("hidden");
+		document.getElementById("servicenow_c").classList.remove("!block");
+		document
+			.getElementById("erpnext1")
+			.classList.add("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("erpnext").classList.add("text-[#3E96F4]");
+		document
+			.getElementById("servicenow1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document
+			.getElementById("servicenow")
+			.classList.remove("text-[#3E96F4]");
+	}
+	const erpnext = document.getElementById("erpnext");
+	erpnext.addEventListener("click", show_erpnext);
+
+	// show service now content and hide other content when click on service now
+	function show_servicenow() {
+		document.getElementById("servicenow_c").classList.add("!block");
+		document.getElementById("erpnext_c").classList.add("hidden");
+		document
+			.getElementById("servicenow1")
+			.classList.add("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("servicenow").classList.add("text-[#3E96F4]");
+		document
+			.getElementById("erpnext1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("erpnext").classList.remove("text-[#3E96F4]");
+	}
+	const servicenow = document.getElementById("servicenow");
+	servicenow.addEventListener("click", show_servicenow);
+
+	// show manufacturing content and hide other content when click on manufacturing
+	function show_manufaturing() {
+		document.getElementById("menuf_c").classList.remove("hidden");
+		document.getElementById("text_c").classList.remove("!flex");
+		document.getElementById("health_c").classList.remove("!flex");
+		document.getElementById("rent_c").classList.remove("!flex");
+		document.getElementById("construction_c").classList.remove("!flex");
+		document.getElementById("crowdfunding_c").classList.remove("!flex");
+		document.getElementById("hr_c").classList.remove("!flex");
+		document.getElementById("ayurveda_c").classList.remove("!flex");
+
+
+		document
+			.getElementById("menuf1")
+			.classList.add("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("menuf").classList.add("text-[#3E96F4]");
+
+		document
+			.getElementById("text1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("text").classList.remove("text-[#3E96F4]");
+		document
+			.getElementById("health1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("health").classList.remove("text-[#3E96F4]");
+		document
+			.getElementById("rent1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("rent").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("construction1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("construction").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("crowdfunding1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("crowdfunding").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("hr1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("hr").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("ayurveda1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
+
+
+
+	}
+	const menu1 = document.getElementById("menuf");
+	menu1.addEventListener("click", show_manufaturing);
+
+	// show textile content and hide other content when click on textile
+	function show_textile() {
+		document.getElementById("text_c").classList.add("!flex");
+		document.getElementById("menuf_c").classList.add("hidden");
+		document.getElementById("health_c").classList.remove("!flex");
+		document.getElementById("rent_c").classList.remove("!flex");
+		document.getElementById("construction_c").classList.remove("!flex");
+		document.getElementById("crowdfunding_c").classList.remove("!flex");
+		document.getElementById("hr_c").classList.remove("!flex");
+		document.getElementById("ayurveda_c").classList.remove("!flex");
+
+
+		document
+			.getElementById("text1")
+			.classList.add("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("text").classList.add("text-[#3E96F4]");
+
+		document
+			.getElementById("menuf1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("menuf").classList.remove("text-[#3E96F4]");
+		document
+			.getElementById("health1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("health").classList.remove("text-[#3E96F4]");
+		document
+			.getElementById("rent1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("rent").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("construction1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("construction").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("crowdfunding1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("crowdfunding").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("hr1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("hr").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("ayurveda1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
+	}
+	const textile = document.getElementById("text");
+	textile.addEventListener("click", show_textile);
+
+	// show healthcare content and hide other content when click on healthcare
+	function show_health() {
+		document.getElementById("health_c").classList.add("!flex");
+		document.getElementById("menuf_c").classList.add("hidden");
+		document.getElementById("text_c").classList.remove("!flex");
+		document.getElementById("rent_c").classList.remove("!flex");
+		document.getElementById("construction_c").classList.remove("!flex");
+		document.getElementById("crowdfunding_c").classList.remove("!flex");
+		document.getElementById("hr_c").classList.remove("!flex");
+		document.getElementById("ayurveda_c").classList.remove("!flex");
+
+		document
+			.getElementById("health1")
+			.classList.add("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("health").classList.add("text-[#3E96F4]");
+
+		document
+			.getElementById("menuf1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("menuf").classList.remove("text-[#3E96F4]");
+		document
+			.getElementById("text1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("text").classList.remove("text-[#3E96F4]");
+		document
+			.getElementById("rent1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("rent").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("construction1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("construction").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("crowdfunding1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("crowdfunding").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("hr1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("hr").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("ayurveda1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
+
+	}
+	const health = document.getElementById("health");
+	health.addEventListener("click", show_health);
+
+	// show rent content and hide other content when click on rent
+	function show_rent() {
+		document.getElementById("rent_c").classList.add("!flex");
+		document.getElementById("menuf_c").classList.add("hidden");
+		document.getElementById("text_c").classList.remove("!flex");
+		document.getElementById("health_c").classList.remove("!flex");
+		document.getElementById("construction_c").classList.remove("!flex");
+		document.getElementById("crowdfunding_c").classList.remove("!flex");
+		document.getElementById("hr_c").classList.remove("!flex");
+		document.getElementById("ayurveda_c").classList.remove("!flex");
+
+		document
+			.getElementById("rent1")
+			.classList.add("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("rent").classList.add("text-[#3E96F4]");
+
+		document
+			.getElementById("menuf1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("menuf").classList.remove("text-[#3E96F4]");
+		document
+			.getElementById("text1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("text").classList.remove("text-[#3E96F4]");
+		document
+			.getElementById("health1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("health").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("construction1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("construction").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("crowdfunding1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("crowdfunding").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("hr1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("hr").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("ayurveda1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
+	}
+	const rent = document.getElementById("rent");
+	rent.addEventListener("click", show_rent);
+
+// show construction content and hide other content when click on construction
+function show_construction() {
+		document.getElementById("construction_c").classList.add("!flex");
+		document.getElementById("menuf_c").classList.add("hidden");
+		document.getElementById("text_c").classList.remove("!flex");
+		document.getElementById("health_c").classList.remove("!flex");
+		document.getElementById("rent_c").classList.remove("!flex");
+		document.getElementById("crowdfunding_c").classList.remove("!flex");
+		document.getElementById("hr_c").classList.remove("!flex");
+		document.getElementById("ayurveda_c").classList.remove("!flex");
+
+		document
+			.getElementById("construction1")
+			.classList.add("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("construction").classList.add("text-[#3E96F4]");
+
+		document
+			.getElementById("menuf1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("menuf").classList.remove("text-[#3E96F4]");
+		document
+			.getElementById("text1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("text").classList.remove("text-[#3E96F4]");
+		document
+			.getElementById("health1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("health").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("rent1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("rent").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("crowdfunding1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("crowdfunding").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("hr1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("hr").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("ayurveda1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
+	}
+	const construction = document.getElementById("construction");
+	construction.addEventListener("click", show_construction);
+
+// show crowdfunding content and hide other content when click on crowdfunding
+function show_crowdfunding() {
+		document.getElementById("crowdfunding_c").classList.add("!flex");
+		document.getElementById("menuf_c").classList.add("hidden");
+		document.getElementById("text_c").classList.remove("!flex");
+		document.getElementById("health_c").classList.remove("!flex");
+		document.getElementById("rent_c").classList.remove("!flex");
+		document.getElementById("construction_c").classList.remove("!flex");
+		document.getElementById("hr_c").classList.remove("!flex");
+		document.getElementById("ayurveda_c").classList.remove("!flex");
+
+		document
+			.getElementById("crowdfunding1")
+			.classList.add("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("crowdfunding").classList.add("text-[#3E96F4]");
+
+		document
+			.getElementById("menuf1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("menuf").classList.remove("text-[#3E96F4]");
+		document
+			.getElementById("text1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("text").classList.remove("text-[#3E96F4]");
+		document
+			.getElementById("health1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("health").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("rent1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("rent").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("construction1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("construction").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("hr1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("hr").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("ayurveda1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
+	}
+	const crowdfunding = document.getElementById("crowdfunding");
+	crowdfunding.addEventListener("click", show_crowdfunding);
+
+// show hr content and hide other content when click on hr
+function show_hr() {
+		document.getElementById("hr_c").classList.add("!flex");
+		document.getElementById("menuf_c").classList.add("hidden");
+		document.getElementById("text_c").classList.remove("!flex");
+		document.getElementById("health_c").classList.remove("!flex");
+		document.getElementById("rent_c").classList.remove("!flex");
+		document.getElementById("construction_c").classList.remove("!flex");
+		document.getElementById("crowdfunding_c").classList.remove("!flex");
+		document.getElementById("ayurveda_c").classList.remove("!flex");
+
+		document
+			.getElementById("hr1")
+			.classList.add("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("hr").classList.add("text-[#3E96F4]");
+
+		document
+			.getElementById("menuf1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("menuf").classList.remove("text-[#3E96F4]");
+		document
+			.getElementById("text1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("text").classList.remove("text-[#3E96F4]");
+		document
+			.getElementById("health1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("health").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("rent1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("rent").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("construction1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("construction").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("crowdfunding1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("crowdfunding").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("ayurveda1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
+	}
+	const hr = document.getElementById("hr");
+	hr.addEventListener("click", show_hr);
+
+// show ayurveda content and hide other content when click on ayurveda
+function show_ayurveda() {
+		document.getElementById("ayurveda_c").classList.add("!flex");
+		document.getElementById("menuf_c").classList.add("hidden");
+		document.getElementById("text_c").classList.remove("!flex");
+		document.getElementById("health_c").classList.remove("!flex");
+		document.getElementById("rent_c").classList.remove("!flex");
+		document.getElementById("construction_c").classList.remove("!flex");
+		document.getElementById("crowdfunding_c").classList.remove("!flex");
+		document.getElementById("hr_c").classList.remove("!flex");
+
+		document
+			.getElementById("ayurveda1")
+			.classList.add("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("ayurveda").classList.add("text-[#3E96F4]");
+
+		document
+			.getElementById("menuf1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("menuf").classList.remove("text-[#3E96F4]");
+		document
+			.getElementById("text1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("text").classList.remove("text-[#3E96F4]");
+		document
+			.getElementById("health1")
+			.classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("health").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("rent1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("rent").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("construction1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("construction").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("crowdfunding1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("crowdfunding").classList.remove("text-[#3E96F4]");
+
+		document.getElementById("hr1").classList.remove("drop-shadow-lg", "shadow", "rounded-lg");
+		document.getElementById("hr").classList.remove("text-[#3E96F4]");
+	}
+	const ayurveda = document.getElementById("ayurveda");
+	ayurveda.addEventListener("click", show_ayurveda);
+
+	// show and hide faq content
+	// show faq1
+	const faq1 = document.getElementById("faq1");
+	faq1.addEventListener("click", show_faq1);
+
+	function show_faq1() {
+		document.getElementById("faq11").classList.remove("!bg-[#B3B3B3]");
+
+		document.getElementById("faq21").classList.remove("!bg-white");
+		document.getElementById("faq31").classList.remove("!bg-white");
+		document.getElementById("faq41").classList.remove("!bg-white");
+
+		document.getElementById("faq1_c").classList.remove("hidden");
+		document.getElementById("faq2_c").classList.remove("!block");
+		document.getElementById("faq3_c").classList.remove("!block");
+		document.getElementById("faq4_c").classList.remove("!block");
+	}
+
+	// show faq2
+	const faq2 = document.getElementById("faq2");
+	faq2.addEventListener("click", show_faq2);
+
+	function show_faq2() {
+		document.getElementById("faq21").classList.add("!bg-white");
+
+		document.getElementById("faq11").classList.add("!bg-[#B3B3B3]");
+		document.getElementById("faq31").classList.remove("!bg-white");
+		document.getElementById("faq41").classList.remove("!bg-white");
+
+		document.getElementById("faq1_c").classList.add("hidden");
+		document.getElementById("faq2_c").classList.add("!block");
+		document.getElementById("faq3_c").classList.remove("!block");
+		document.getElementById("faq4_c").classList.remove("!block");
+	}
+
+	//show faq3
+	const faq3 = document.getElementById("faq3");
+	faq3.addEventListener("click", show_faq3);
+
+	function show_faq3() {
+		document.getElementById("faq31").classList.add("!bg-white");
+
+		document.getElementById("faq11").classList.add("!bg-[#B3B3B3]");
+		document.getElementById("faq21").classList.remove("!bg-white");
+		document.getElementById("faq41").classList.remove("!bg-white");
+
+		document.getElementById("faq1_c").classList.add("hidden");
+		document.getElementById("faq2_c").classList.remove("!block");
+		document.getElementById("faq3_c").classList.add("!block");
+		document.getElementById("faq4_c").classList.remove("!block");
+	}
+
+	// show faq4
+	const faq4 = document.getElementById("faq4");
+	faq4.addEventListener("click", show_faq4);
+
+	function show_faq4() {
+		document.getElementById("faq41").classList.add("!bg-white");
+
+		document.getElementById("faq11").classList.add("!bg-[#B3B3B3]");
+		document.getElementById("faq21").classList.remove("!bg-white");
+		document.getElementById("faq31").classList.remove("!bg-white");
+
+		document.getElementById("faq1_c").classList.add("hidden");
+		document.getElementById("faq2_c").classList.remove("!block");
+		document.getElementById("faq3_c").classList.remove("!block");
+		document.getElementById("faq4_c").classList.add("!block");
+	}
+
+	// Slides
+
+	const slides = document.querySelectorAll(".slide");
+	const nextBtn = document.getElementById("nextBtn");
+	const preBtn = document.getElementById("preBtn");
+	let currentIndex = 0;
+
+	function showSlide(index) {
+		slides.forEach((slide) => {
+			slide.classList.remove("active");
+		});
+		slides[index].classList.add("active");
+	}
+
+	function nextSlide() {
+		currentIndex = (currentIndex + 1) % slides.length;
+		showSlide(currentIndex);
+	}
+
+	function preSlide() {
+		currentIndex = (currentIndex + 1) % slides.length;
+		showSlide(currentIndex);
+	}
+
+	nextBtn.addEventListener("click", nextSlide);
+	preBtn.addEventListener("click", preSlide);
+
+	// Auto slide every 3 seconds
+	setInterval(nextSlide, 3000);
+
+	// scroll next
+	document
+		.getElementById("nextScrollButton")
+		.addEventListener("click", () => {
+			// Get the container element by its ID
+			const containerElement = document.getElementById("scrollContainer");
+
+			// Calculate the scroll amount
+			const scrollAmount = containerElement.offsetWidth;
+
+			// Perform horizontal scroll using the scrollBy method
+			containerElement.scrollBy({
+				top: 0,
+				left: scrollAmount,
+				behavior: "smooth",
+			});
+		});
+
+	// scroll pre.
+	document.getElementById("preScrollButton").addEventListener("click", () => {
+		// Get the container element by its ID
+		const containerElement = document.getElementById("scrollContainer");
+
+		// Calculate the scroll amount
+		const scrollAmount = -containerElement.offsetWidth;
+
+		// Perform horizontal scroll using the scrollBy method
+		containerElement.scrollBy({
+			top: 0,
+			left: scrollAmount,
+			behavior: "smooth",
+		});
+	});
+</script>
