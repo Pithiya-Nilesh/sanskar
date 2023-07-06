@@ -7,7 +7,40 @@ import instagram from "../../public/insta-footer.svg"
 import phone from "../../public/phone.svg"
 import map from "../../public/map.svg"
 import email from "../../public/email.svg"
+import form_bg from "../../public/form-bg.svg"
+import right from "../../public/right.svg";
 ---
+
+<section class="bg-[#3E96F4] flex flex-wrap relative mt-60">
+    <div
+        class="bg-lets-craft w-full md:w-5/12 bg-no-repeat bg-center bg-cover"
+    >
+        <Image
+            src={form_bg} alt="form_bg"
+            alt="Image description"
+            class="block md:absolute md:left-80 md:-top-32"
+        />
+    </div>
+    <div
+        class="mx-5 md:max-w-7xl md:mx-auto md:px-24 w-full md:w-7/12 p-0 py-3 md:p-10"
+    >
+        <h4 class="font-semibold text-white text-4xl">
+            Let's craft awesomeness together!
+        </h4>
+        <div
+            class="mt-5 flex justify-between bg-white rounded-lg px-5 py-3 w-56"
+        >
+            <a
+                href="#"
+                class="text-[#3E96F4] text-base font-semibold font-inter"
+                >Fill up a form now.</a
+            >
+            <Image src={right} width={6} height={12} alt="right arrow "/>
+        </div>
+    </div>
+</section>
+
+
 <footer class="bg-[#31393C] py-20">
     <!-- <div class="md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap text-white">
         <div class="sm:w-full md:w-3/12 lg:w-3/12">
@@ -146,4 +179,7 @@ import email from "../../public/email.svg"
     .font-montserrat{
         font-family: Montserrat;
     }
+    .bg-lets-craft{
+		background-image: url('../../public/form-bg-3.png');
+	}
 </style>
