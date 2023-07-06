@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../styles.css";
-import Card from "../components/Card.astro";
 import { Image, Picture } from "@astrojs/image/components";
 
 // import banner_image from "../../public/banner.png";
@@ -43,7 +42,6 @@ import it_service from "../../public/it-service.svg"
 import communication from "../../public/communication.svg"
 import analytics from "../../public/analytics.svg"
 import integration from "../../public/integration.svg"
-
 
 import industry_rich_expertise from "../../public/industry-rich-expertise.svg"
 import cost_saving from "../../public/cost-saving.svg"
@@ -467,7 +465,7 @@ import form_bg from "../../public/form-bg.svg"
 		<section
 			class="md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap md:items-center sm:text-left lg:mt-40 md:mt-40 mt-10 mx-5"
 		>
-			<div class="lg:w-3/12 md:w-3/12 sm:w-full mb-10">
+			<div class="lg:w-3/12 md:w-3/12 sm:w-full mb-10 p-2">
 				<h1 class="text-4xl text-[#31393C] font-semibold">
 					Let our numbers do the talking!
 				</h1>
@@ -874,7 +872,7 @@ import form_bg from "../../public/form-bg.svg"
 		</section>
 
 		<section
-			class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10 md:text-center sm:text-left"
+			class="grid justify-items-center mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10 md:text-center sm:text-left"
 		>
 			<div class="md:text-center sm:text-left md:mb-20">
 				<h2 class="text-4xl text-[#31393C] font-semibold">
@@ -886,16 +884,16 @@ import form_bg from "../../public/form-bg.svg"
 					with on-the-go integrations.
 				</p>
 			</div>
-			<Image src={integration_tools} alt="integration_tools" class="mt-10"/>
+			<Image src={integration_tools} alt="integration_tools" class=""/>
 
 			<div
-				class="flex flex-wrap justify-between items-center mt-10 sm:mx-auto md:mx-56"
+				class="flex flex-wrap gap-5 justify-between items-center mt-10 sm:mx-auto md:mx-56"
 			>
 				<div class="text-[#31393C] text-base font-semibold">
 					Can’t see your required integration tool here?
 				</div>
 				<div
-					class="flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-52 sm:mt-5"
+					class="flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-52"
 				>
 					<a href="#" class="text-white font-semibold font-inter"
 						>We can help!</a
@@ -912,7 +910,7 @@ import form_bg from "../../public/form-bg.svg"
 				class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5"
 			>
 				<div
-					class="bg-[url('../../public/bg.svg')] bg-no-repeat grid gap-2"
+					class="move-beyond-bg bg-no-repeat grid gap-2"
 				>
 					<p
 						class="text-4xl leading-[44px] text-[#31393C] font-semibold"
@@ -924,7 +922,7 @@ import form_bg from "../../public/form-bg.svg"
 						Regardless of your industry, we have got you covered.
 					</div>
 					<div
-						class="flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 md:w-72 sm:w-auto"
+						class="flex justify-between items-center bg-[#3E96F4] rounded-lg px-5 py-2 md:w-72 sm:w-auto"
 					>
 						<a href="#" class="text-white font-semibold font-inter"
 							>Schedule a call back now!</a
@@ -1221,7 +1219,7 @@ import form_bg from "../../public/form-bg.svg"
 		</section>
 
 		<section
-			class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10"
+			class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-36 md:mt-36 mt-10"
 		>
 			<div
 				class="hidden md:block lg:block bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-5 shadow drop-shadow-sm"
@@ -1754,7 +1752,7 @@ import form_bg from "../../public/form-bg.svg"
 
 		<section class="bg-[#3E96F4] flex flex-wrap mt-40 relative">
 			<div
-				class="bg-[url(../../public/form-bg-3.png)] w-full md:w-5/12 bg-no-repeat bg-center bg-cover"
+				class="bg-lets-craft w-full md:w-5/12 bg-no-repeat bg-center bg-cover"
 			>
 				<Image
 					src={form_bg} alt="form_bg"
@@ -1872,6 +1870,13 @@ import form_bg from "../../public/form-bg.svg"
 		box-shadow: 0px 0px 100px 0px rgba(62, 150, 244, 0.1) inset,
 			4px 4px 4px 0px rgba(62, 150, 244, 0.15);
 	}
+	.move-beyond-bg{
+		background-image: url('../../public/bg.svg');
+	}
+	.bg-lets-craft{
+		background-image: url('../../public/form-bg-3.png');
+	}
+
 </style>
 
 <script>
