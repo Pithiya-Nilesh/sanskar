@@ -3,7 +3,12 @@ import Layout from "../layouts/Layout.astro";
 import '../styles.css'
 import Card from "../components/Card.astro";
 import { Image, Picture } from "@astrojs/image/components";
+import banner from '../../public/banner.png';
+
 import banner_image from "../../public/banner.png";
+
+
+
 const erpnext_servicenow = true;
 const toggleState = true;
 ---
@@ -78,7 +83,7 @@ const toggleState = true;
 		<section class="hidden lg:flex h-[calc(100vh-10vh)] relative flex-wrap items-center">
 			<img
 				class="absolute right-0 w-5/12"
-				src="../../public/banner.png"
+				src={banner}
 				alt="banner image"
 				class=""
 			/>
@@ -126,7 +131,7 @@ const toggleState = true;
 				</div>
 			</div>
 			<img
-				src="../../public/banner.png"
+				src={banner}
 				alt="banner image"
 				class="mt-5"
 			/>
