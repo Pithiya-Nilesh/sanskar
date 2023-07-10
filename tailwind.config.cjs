@@ -8,4 +8,5 @@ module.exports = {
 		sans: ['Open Sans', 'sans-serif'],
 	  },
 	plugins: [],
+
 }
