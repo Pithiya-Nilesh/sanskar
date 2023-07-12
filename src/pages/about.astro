@@ -29,7 +29,7 @@ import impactful_story from '../../public/impactful-story.svg';
 
 <Layout title="Sanskar About-us Page">
 	<main>
-	<section class="bg-white">
+	<section class="section-bg-right">
 		<div
 			class="hidden lg:flex h-[calc(100vh-10vh)] lg:py-[0rem] xl:py-[24rem] 2xl:py-[24rem] relative flex-wrap items-center " >
 			<Image
@@ -53,7 +53,7 @@ import impactful_story from '../../public/impactful-story.svg';
 
 		<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 md:flex lg:hidden flex-wrap items-center pt-10 pb-5" >
 			<div class="">
-				<h1 class="text-[1.75rem] md:text-[3rem] text-[#31393C] font-semibold leading-9 md:leading-[3.5rem]">
+				<h1 class="text-[1.75rem] md:text-[2.5rem] text-[#31393C] font-semibold leading-9 md:leading-[3.5rem]">
 						Efficient workflows.<br> Productive Workforce. <br> Satisfied customers.
 					</h1>
 					<p class="text[#31393C] font-normal text-sm md:text-base mt-3 md:mt-5 leading-5 md:leading-6">
@@ -70,7 +70,7 @@ import impactful_story from '../../public/impactful-story.svg';
 		</div>
 	</section>
 
-		<section class="bg-white">
+		<section>
 			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24">
 				<h2 class="text-center font-semibold text-[#31393C] text-2xl md:text-3xl lg:text-4xl leading-[2.25rem] md:leading-[2.50rem] lg:leading-[2.75rem]">Who are we?<h2>				
 				<p class="hidden md:hidden lg:hidden xl:block mt-2 md:mt-3 lg:mt-4 text-center font-normal leading-4 md:leading-5 lg:leading-6 text-xs md:text-sm lg:text-base text-[#31393C]">Sanskar Technolab has been the leading ERPNEXT & ServiceNow implementation partner serving enterprises for the past 12 <br> years. We have a dedicated team of over 50+ skilled developers, designers, and project managers who will understand <br> clients' requirements and offer solutions accordingly.</p>
@@ -85,10 +85,10 @@ import impactful_story from '../../public/impactful-story.svg';
 			</div>
 		</section>
 
-		<section class="bg-white">
-			<div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem] mx-5 md:max-w-7xl md:mx-auto md:px-24">
+		<section class="section-bg-left pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem]">
+			<div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10  mx-5 md:max-w-7xl md:mx-auto md:px-24">
 				<div>
-					<h2 class="text-xl md:text-3xl text-center md:text-center lg:text-start lg:text-4xl mr-0 md:mr-0 lg:mr-20 leading-[2rem] md:leading-[2.50rem] lg:leading-[2.75rem] font-semibold text-[#31393C]">Sanskar Technolab's unique approach to setting up enterprises for success!</h2>
+					<h2 class="text-2xl md:text-3xl text-center md:text-center lg:text-start lg:text-4xl mr-0 md:mr-0 lg:mr-20 leading-[2rem] md:leading-[2.50rem] lg:leading-[2.75rem] font-semibold text-[#31393C]">Sanskar Technolab's unique approach to setting up enterprises for success!</h2>
 					<div class="flex flex-wrap justify-center md:justify-center lg:justify-start">
 						<Image class="flex flex-wrap justify-center items-center mt-10 md:mt-12 lg:mt-16" src={unique_approach} alt="Unique Approach" width={409} height={389} />
 					</div>
@@ -129,25 +129,31 @@ import impactful_story from '../../public/impactful-story.svg';
 				</div>
 			</div>
 
-			<div class="hidden md:hidden lg:hidden xl:flex mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-32 md:mt-40 mt-10">
-				<div class="bg-image bg-cover h-96 grid p-16 pt-24 items-center" >
-					<h2 class="w-10/12 pr-16 text-4xl leading-[2.75rem] text-white font-semibold">
-						Partner with us to unleash the potential of the best tech for your business!
-					</h2>
-					<div class="text-white text-base font-semibold flex items-center gap-3 -mt-14">
-						<div
-							class="flex justify-between bg-white rounded-lg px-5 py-3 w-56" >
-							<a href="#" class="text-[#3E96F4] font-semibold text-base font-inter">Book a free demo.</a>
-							<Image src={right_arrow} alt="Drive To Innovation" width={6} height={12} />
-						</div>
+			<div
+				class="hidden lg:block mx-5 md:max-w-7xl md:mx-auto md:px-24 pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem]"
+				>
+				<div
+					class="bg-image bg-cover bg-no-repeat bg-center md:bg-contain md:bg-right h-96 grid p-16 pt-24 items-center"
+				>
+					<h2 class="w-10/12 pr-16 lg:text-2xl xl:text-4xl lg:leading-[2.25rem] xl:leading-[2.75rem] text-white font-semibold">
+							Partner with us to unleash the potential of the best tech for your business!
+						</h2>
+					<div
+						class="text-white text-base font-semibold flex items-center gap-3 lg:-mt-20 xl:-mt-16 font-inter"
+					>
+					<div
+								class="flex justify-between bg-white rounded-lg lg:px-4 xl:px-5 py-2 w-56" >
+								<a href="#" class="text-[#3E96F4] font-semibold text-base font-inter">Book a free demo.</a>
+								<Image src={right_arrow} alt="Drive To Innovation" width={6} height={12} />
+							</div>
 					</div>
 				</div>
 			</div>
 		</section>	
 
-		<section class="bg-white">
+		<section>
 			<div class="mx-5 md:max-w-7xl py-[6.25rem] md:py-[6.25rem] lg:py-[12.5rem] md:mx-auto md:px-24">
-				<h2 class="text-xl md:text-3xl lg:text-4xl leading-[2rem] md:leading-[2.25rem] lg:leading-[2.75rem] pb-2 md:pb-3 lg:pb-4 text-center font-semibold text-[#31393C]">Our Core Values</h2>
+				<h2 class="text-2xl md:text-3xl lg:text-4xl leading-[2rem] md:leading-[2.25rem] lg:leading-[2.75rem] pb-2 md:pb-3 lg:pb-4 text-center font-semibold text-[#31393C]">Our Core Values</h2>
 				<p class="text-xs md:text-sm lg:text-base text-center text-[#000000] font-semibold leading-4 md:leading-5 lg:leading-6">Our Guiding Principles to drive the desired action.</p>
 				<div class="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 mt-8 md:mt-10 lg:mt-14 mb-0 md:mb-0 lg:mb-0 gap-6 md:gap-10 lg:gap-14">
 					<div class="flex flex-col items-center">
@@ -184,10 +190,10 @@ import impactful_story from '../../public/impactful-story.svg';
 			</div>
 		</section>	
 
-		<section class="bg-white">
+		<section class="section-bg-center">
 			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24">
-				<h2 class="hidden md:hidden lg:hidden xl:block text-center text-[#31393C] font-semibold text-xl md:text-3xl lg:text-4xl leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem] pb-4 md:pb-6 lg:pb-8">Empowering Communities: <br> Sanskar Technolab's Dual Mission of Business <br> Excellence and Social Responsibility!</h2>
-				<h2 class="block md:block lg:block xl:hidden text-center text-[#31393C] font-semibold text-xl md:text-3xl lg:text-4xl leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem] pb-4 md:pb-6 lg:pb-8">Empowering Communities: <br> Sanskar Technolab's Dual Mission of Business Excellence and Social Responsibility!</h2>
+				<h2 class="hidden md:hidden lg:hidden xl:block text-center text-[#31393C] font-semibold text-2xl md:text-3xl lg:text-4xl leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem] pb-4 md:pb-6 lg:pb-8">Empowering Communities: <br> Sanskar Technolab's Dual Mission of Business <br> Excellence and Social Responsibility!</h2>
+				<h2 class="block md:block lg:block xl:hidden text-center text-[#31393C] font-semibold text-2xl md:text-3xl lg:text-4xl leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem] pb-4 md:pb-6 lg:pb-8">Empowering Communities: <br> Sanskar Technolab's Dual Mission of Business Excellence and Social Responsibility!</h2>
 				<p class="hidden md:hidden lg:hidden xl:block text-center text-[#000000] leading-4 md:leading-5 lg:leading-6 text-xs md:text-sm lg:text-base font-normal pb-2 md:pb-3 lg:pb-4">At Sanskar Technolabs, we believe in the power of collective impact and the importance of giving <br> back to society. As part of our commitment to social responsibility, we have partnered with Best <br> Deed, a leading crowdfunding platform, to support causes that align with our values.</p>
 				<p class="block md:block lg:block xl:hidden text-center text-[#000000] leading-4 md:leading-5 lg:leading-6 text-xs md:text-sm lg:text-base font-normal pb-2 md:pb-3 lg:pb-4">At Sanskar Technolabs, we believe in the power of collective impact and the importance of giving back to society. As part of our commitment to social responsibility, we have partnered with Best Deed, a leading crowdfunding platform, to support causes that align with our values.</p>
 				<p class="text-center text-[#31393C] leading-4 md:leading-5 lg:leading-6 text-xs md:text-sm lg:text-base font-semibold">Together, we have contributed to a range of initiatives close to our hearts...</p>
@@ -215,23 +221,20 @@ import impactful_story from '../../public/impactful-story.svg';
 			</div>
 		</section>
 
-		<section class="bg-white">
-			<div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-10 xl:gap-0 mx-5 md:max-w-7xl pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem] md:mx-auto md:px-24 pt ">
+		<section class="pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem]">
+			<div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-10 xl:gap-0 mx-5 md:max-w-7xl md:mx-auto md:px-24">
 				 <div class="flex justify-center md:justify-center lg:justify-start">
             <Image class="" src={impactful_story} alt="Impactful Story" width={483} height={486} />
         </div>
-				<div >
+				<div>
 					<p class="text-[#31393C] pb-1 font-medium text-lg md:text-2xl lg:text-3xl leading-[1.5rem] md:leading-[2.25rem] lg:leading-[2.75rem]">Our Impactful Story: </p>
-					<h2 class="text-[#31393C] pb-2 md:pb-4 lg:pb-6 font-semibold  text-xl md:text-3xl lg:text-4xl leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem]">12 Years of Excellence & Innovation!</h2>
+					<h2 class="text-[#31393C] pb-2 md:pb-4 lg:pb-6 font-semibold  text-2xl md:text-3xl lg:text-4xl leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem]">12 Years of Excellence & Innovation!</h2>
 					<p class="text-[#31393C]  pb-2 md:pb-4 lg:pb-6 leading-4 md:leading-5 lg:leading-6 text-xs md:text-sm lg:text-base font-normal">Sanskar Technolab was started over 12 years back by Anand Thakker. He started with a clear mission & vision to leverage the best technologies and tools and serve businesses with the best-in-class results by adopting the best practices, target market preferences, and latest trends.</p>
 					<p class="text-[#31393C]  pb-2 md:pb-4 lg:pb-6 leading-4 md:leading-5 lg:leading-6 text-xs md:text-sm lg:text-base font-normal"> Since our inception, we have covered different areas of excellence with constant innovation and personalized solutions by keeping our clients at the center.</p>
 					<p class="text-[#31393C]  pb-2 md:pb-4 lg:pb-6 leading-4 md:leading-5 lg:leading-6 text-xs md:text-sm lg:text-base font-normal">So, we at Sanskar Technolabs have, are, and will continue to serve desired solutions for our clients and their end customers.</p>
 				</div>
 			</div>
 		</section>
-
-		
-
 	</main>
 </Layout>
 

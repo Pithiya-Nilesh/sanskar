@@ -1,0 +1,453 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles.css";
+import { Image, Picture } from "@astrojs/image/components";
+
+import migoo_banner from "../../public/migoo_banner.svg";
+import right from "../../public/right.svg";
+import customer from "../../public/customer.svg";
+import migoo_client_vision from "../../public/migoo_client_vision.svg";
+import migoo_logo from "../../public/migoo_logo.svg";
+import our_works from "../../public/our_works.svg";
+import problem1 from "../../public/problem1.svg";
+import problem2 from "../../public/problem2.svg";
+import problem3 from "../../public/problem3.svg";
+import problem4 from "../../public/problem4.svg";
+import problem5 from "../../public/problem5.svg";
+import slider1 from "../../public/m_slider1.svg";
+import slider2 from "../../public/m_slider2.svg";
+import slider3 from "../../public/m_slider3.svg";
+import slider4 from "../../public/m_slider4.svg";
+import slider5 from "../../public/m_slider5.svg";
+import previousbtn from "../../public/previousbtn.svg";
+import nextbtn from "../../public/nextbtn.svg";
+---
+
+<Layout title="migoo case study">
+    <main>
+        <section
+            class="hidden lg:flex h-[calc(100vh-10vh)] relative flex-wrap items-center"
+        >
+            <Image
+                class="absolute right-0 w-5/12"
+                src={migoo_banner}
+                alt="banner image"
+                width={737}
+                height={509}
+            />
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex">
+                <div class="w-7/12">
+                    <h1
+                        class="lg:text-[3rem] text-[#31393C] font-semibold lg:leading-[3.75rem] xl:leading-[4rem]"
+                    >
+                        Developed Most Complex ERPNEXT Portal for Construction
+                        Industry!
+                    </h1>
+                    <p
+                        class="text-[#31393C] leading-7 font-normal text-lg mt-5"
+                    >
+                        Our team at Sanskar Technolabs has developed a
+                        full-fledged platform by leveraging ERPNEXT for renting,
+                        buying, selling and managing heavy-duty construction
+                        equipment.
+                    </p>
+                    <div
+                        class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 md:w-72 sm:w-auto"
+                    >
+                        <a
+                            href="#"
+                            class="text-white text-base font-semibold font-inter"
+                            >Schedule a Free demo now</a
+                        >
+                        <Image
+                            src={right}
+                            width={6}
+                            height={12}
+                            alt="right arrow "
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="mx-5 md:max-w-7xl md:mx-auto md:px-24 md:flex lg:hidden flex-wrap items-center mt-10 mb-20"
+        >
+            <div class="">
+                <div
+                    class="text-[1.75rem] md:text-[3rem] leading-9 md:leading-[3.5rem] text-[#31393C] font-semibold"
+                >
+                    Developed Most Complex ERPNEXT Portal for Construction
+                    Industry!
+                </div>
+                <p
+                    class="text[#31393C] text-sm md:text-base leading-5 md:leading-6 mt-5"
+                >
+                    Our team at Sanskar Technolabs has developed a full-fledged
+                    platform by leveraging ERPNEXT for renting, buying, selling
+                    and managing heavy-duty construction equipment.
+                </p>
+                <div
+                    class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 w-auto md:w-72"
+                >
+                    <a
+                        href="#"
+                        class="text-white text-base font-semibold font-inter"
+                        >Schedule a Free demo now</a
+                    >
+                    <Image
+                        src={right}
+                        width={6}
+                        height={12}
+                        alt="right arrow "
+                    />
+                </div>
+            </div>
+            <Image
+                src={migoo_banner}
+                alt="banner image"
+                class="mt-5"
+                width={737}
+                height={509}
+            />
+        </section>
+
+        <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-52 md:mt-52 mt-10">
+
+            <div class="md:text-center sm:text-left">
+				<h2
+					class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold"
+				>
+                    Our End Solutions!
+				</h2>
+
+            <div
+                id="carouselExampleIndicators"
+                class="relative"
+                data-te-carousel-init
+                data-te-carousel-slide
+            >
+                <!--Carousel indicators-->
+                <div
+                    class="absolute -bottom-[3rem] left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0 gap-4"
+                    data-te-carousel-indicators
+                >
+                    <button
+                        type="button"
+                        data-te-target="#carouselExampleIndicators"
+                        data-te-slide-to="0"
+                        data-te-carousel-active
+                        class="mx-[3px] box-content  h-4 w-4 rounded-full flex-initial cursor-pointer  border-solid border-transparent bg-[#D9D9D9] bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-current="true"
+                        aria-label="Slide 1"></button>
+                    <button
+                        type="button"
+                        data-te-target="#carouselExampleIndicators"
+                        data-te-slide-to="1"
+                        class="mx-[3px] box-content h-4 w-4 rounded-full flex-initial cursor-pointer  border-solid border-transparent bg-[#D9D9D9] bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-label="Slide 2"></button>
+                    <button
+                        type="button"
+                        data-te-target="#carouselExampleIndicators"
+                        data-te-slide-to="2"
+                        class="mx-[3px] box-content  h-4 w-4 rounded-full flex-initial cursor-pointer  border-solid border-transparent bg-[#D9D9D9] bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-label="Slide 3"></button>
+                    <button
+                        type="button"
+                        data-te-target="#carouselExampleIndicators"
+                        data-te-slide-to="3"
+                        class="mx-[3px] box-content  h-4 w-4 rounded-full flex-initial cursor-pointer border-solid border-transparent bg-[#D9D9D9] bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-label="Slide 4"></button>
+                    <button
+                        type="button"
+                        data-te-target="#carouselExampleIndicators"
+                        data-te-slide-to="4"
+                        class="mx-[3px] box-content  h-4 w-4 rounded-full flex-initial cursor-pointer border-solid border-transparent bg-[#D9D9D9] bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-label="Slide 5"></button>
+                </div>
+
+                <!--Carousel items-->
+                <div
+                    class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
+                >
+                    <!--First item-->
+                    <div
+                        class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-item
+                        data-te-carousel-active
+                    >
+                    <div class="block flex flex-wrap mt-5 gap-5">
+                        <Image class="sm:w-full md:w-7/12 lg:w-7/12" src={slider1} alt="slider image 1" />
+                            
+                        <div class="sm:w-full md:w-4/12 lg:w-4/12 text-[#31393c] text-left">
+                            <div class=" font-semibold text-xl mt-3 md:mt-10">Demand portal</div>
+                            <p class="text-base ">Our end-to-end demand portal revolutionizes the process of renting or buying heavy-duty construction equipment.</p>
+                            <div class=" font-semibold text-base mt-5">Everything it includes!</div>
+                            <ul class="text-base list-disc ml-7">
+                                <li>User-friendly interface.</li>
+                                <li>Customized search filters. </li>
+                                <li>Effective communication with our team through (Call/Whatsapp). </li>
+                                <li>Automated compliance and verification systems for smooth onboarding.</li>
+                                <li>Secure and faster transactions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                    <!--Second item-->
+                    <div
+                        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-item
+                    >
+                    <div class="block flex flex-wrap mt-5 gap-5">
+                        <Image class="sm:w-full md:w-7/12 lg:w-7/12" src={slider2} alt="slider image 2" />
+                            
+                        <div class="sm:w-full md:w-4/12 lg:w-4/12 text-[#31393c] text-left">
+                            <div class=" font-semibold text-xl mt-3 md:mt-10">Supplier Portal</div>
+                            <p class="text-base ">Apart from the demand portal, we have even built a feature-rich supplier portal.
+                                Suppliers can easily register and get the most out of their idle construction equipment.</p>
+                            <div class=" font-semibold text-base mt-5">Everything it includes!</div>
+                            <ul class="text-base list-disc ml-7">
+                                <li>Suppliers can effectively manage the equipment with efficient tracking features.</li>
+                                <li>Automated billing features.</li>
+                                <li>Latest equipment fitness information along with insurance dates, permits, and PUC expiry dates.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                    <!--Third item-->
+                    <div
+                        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-item
+                    >
+                    <div class="block flex flex-wrap mt-5 gap-5">
+                        <Image class="sm:w-full md:w-7/12 lg:w-7/12" src={slider3} alt="slider image 3" />
+                            
+                        <div class="sm:w-full md:w-4/12 lg:w-4/12 text-[#31393c] text-left">
+                            <div class=" font-semibold text-xl mt-3 md:mt-10">CRM</div>
+                            <p class="text-base ">For every business, effective customer relationship management is at the core.
+                                So, to enhance customer service effectiveness, we have tailored our workflow to align with each client's specific workflow.</p>
+                            <div class=" font-semibold text-base mt-5">Everything it includes!</div>
+                            <ul class="text-base list-disc ml-7">
+                                <li>Automated the entire sales process.</li>
+                                <li>ntegrated (email, phone, and WhatsApp) with CRM for streamlined communication.</li>
+                                <li>The Migoo team can track all the calls, emails, proposals and quotations of salespersons to evaluate performance and customer satisfaction.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Fourth item -->
+                    <div
+                        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-item
+                    >
+                    <div class="block flex flex-wrap mt-5 gap-5">
+                        <Image class="sm:w-full md:w-7/12 lg:w-7/12" src={slider4} alt="slider image 4" />
+                            
+                        <div class="sm:w-full md:w-4/12 lg:w-4/12 text-[#31393c] text-left">
+                            <div class=" font-semibold text-xl mt-3 md:mt-10">Accounting</div>
+                            <p class="text-base ">We have migrated the entire accounting data from their tally software and embedded it into the current portal for better accounting management.</p>
+                            <!-- <div class=" font-semibold text-base mt-5">Everything it includes!</div>
+                            <ul class="text-base list-disc ml-7">
+                                <li>User-friendly interface.</li>
+                                <li>Customized search filters. </li>
+                                <li>Effective communication with our team through (Call/Whatsapp). </li>
+                                <li>Automated compliance and verification systems for smooth onboarding.</li>
+                                <li>Secure and faster transactions.</li>
+                            </ul> -->
+                        </div>
+                    </div>
+    
+                    </div>
+                    <!-- Fifth item -->
+                    <div
+                        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-item
+                    >
+                    <div class="block flex flex-wrap mt-5 gap-5">
+                        <Image class="sm:w-full md:w-7/12 lg:w-7/12" src={slider5} alt="slider image 5" />
+                            
+                        <div class="sm:w-full md:w-4/12 lg:w-4/12 text-[#31393c] text-left">
+                            <div class=" font-semibold text-xl mt-3 md:mt-10">HR & Payroll</div>
+                            <p class="text-base ">We have even worked on the HR & Payroll module to fulfill the basics for end-to-end employee management.</p>
+                            <!-- <div class=" font-semibold text-base mt-5">Everything it includes!</div>
+                            <ul class="text-base list-disc ml-7">
+                                <li>User-friendly interface.</li>
+                                <li>Customized search filters. </li>
+                                <li>Effective communication with our team through (Call/Whatsapp). </li>
+                                <li>Automated compliance and verification systems for smooth onboarding.</li>
+                                <li>Secure and faster transactions.</li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section
+			class=" mx-5 md:max-w-7xl md:mx-auto md:px-24 pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem]"
+		>
+			<div class="md:text-center sm:text-left md:mb-20">
+				<h2
+					class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold"
+				>
+                Let's hear it from our client!
+				</h2>
+			</div>
+
+			<div
+				class="happy-customer-shadow md:p-10 p-5 rounded-[20px] slideshow h-[26rem] md:h-[23rem] lg:h-[23rem] mt-5"
+			>
+				<div
+					class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 slide"
+				>
+					<Image class="pr-5" src={customer} alt="customer" />
+					<div class="text-[#31393C]">
+						<p
+							class="text-base md:text-lg lg:text-xl leading-9 font-semibold my-3"
+						>
+							Osswal Infosystems
+						</p>
+						<p class="text-xs md:text-sm lg:text-base pr-5">
+							Watch Mohit Nagori, Director of Osswal Infosystems
+							Pvt. Ltd., speak about his company's journey with
+							SAP and UBS. He shares insights about our
+							collaboration and how to make a successful
+							partnership work!
+						</p>
+						<p
+							class="text-xs md:text-sm lg:text-base font-semibold mt-5"
+						>
+							Mohit Nagori
+						</p>
+						<p class="text-[0.625rem] md:text-xs lg:text-sm">
+							Director, Osswal Infosystems Pvt. Ltd.
+						</p>
+					</div>
+				</div>
+
+				<div
+					class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 slide"
+				>
+					<Image class="pr-5" src={customer} alt="customer" />
+					<div class="text-[#31393C]">
+						<p
+							class="text-base md:text-lg lg:text-xl leading-9 font-semibold my-3"
+						>
+							Osswal Infosystems 2
+						</p>
+						<p class="text-xs md:text-sm lg:text-base pr-5">
+							2. Watch Mohit Nagori, Director of Osswal
+							Infosystems Pvt. Ltd., speak about his company's
+							journey with SAP and UBS. He shares insights about
+							our collaboration and how to make a successful
+							partnership work!
+						</p>
+						<p
+							class="text-xs md:text-sm lg:text-base font-semibold mt-5"
+						>
+							Mohit Nagori
+						</p>
+						<p class="text-[0.625rem] md:text-xs lg:text-sm">
+							Director, Osswal Infosystems Pvt. Ltd.
+						</p>
+					</div>
+				</div>
+
+				<div
+					class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 slide"
+				>
+					<Image class="pr-5" src={customer} alt="customer" />
+					<div class="text-[#31393C]">
+						<p
+							class="text-base md:text-lg lg:text-xl leading-9 font-semibold my-3"
+						>
+							Osswal Infosystems 3
+						</p>
+						<p class="text-xs md:text-sm lg:text-base pr-5">
+							3. Watch Mohit Nagori, Director of Osswal
+							Infosystems Pvt. Ltd., speak about his company's
+							journey with SAP and UBS. He shares insights about
+							our collaboration and how to make a successful
+							partnership work!
+						</p>
+						<p
+							class="text-xs md:text-sm lg:text-base font-semibold mt-5"
+						>
+							Mohit Nagori
+						</p>
+						<p class="text-[0.625rem] md:text-xs lg:text-sm">
+							Director, Osswal Infosystems Pvt. Ltd.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex justify-center gap-3 mt-10">
+				<Image src={previousbtn} alt="previousbtn" id="preBtn" />
+				<Image src={nextbtn} alt="nextbtn" id="nextBtn" />
+			</div>
+		</section>
+
+
+    </main>
+</Layout>
+
+
+<style>
+    .happy-customer-shadow {
+		box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.07);
+	}
+
+    	/*  slider */
+	.slideshow {
+		/* height: max-content; */
+		overflow: hidden;
+		position: relative;
+	}
+
+	.slide {
+		/* height: max-content; */
+		position: absolute;
+		opacity: 0;
+		transition: opacity 0.5s ease;
+	}
+
+	.slide.active {
+		opacity: 1;
+	}
+
+</style>
+<script>
+    // Slides
+
+	const slides = document.querySelectorAll(".slide");
+	const nextBtn = document.getElementById("nextBtn");
+	const preBtn = document.getElementById("preBtn");
+	let currentIndex = 0;
+
+	function showSlide(index) {
+		slides.forEach((slide) => {
+			slide.classList.remove("active");
+		});
+		slides[index].classList.add("active");
+	}
+
+	function nextSlide() {
+		currentIndex = (currentIndex + 1) % slides.length;
+		showSlide(currentIndex);
+	}
+
+	function preSlide() {
+		currentIndex = (currentIndex + 1) % slides.length;
+		showSlide(currentIndex);
+	}
+
+	nextBtn.addEventListener("click", nextSlide);
+	preBtn.addEventListener("click", preSlide);
+
+	// Auto slide every 3 seconds
+	setInterval(nextSlide, 3000);
+</script>
