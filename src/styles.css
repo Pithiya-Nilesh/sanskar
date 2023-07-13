@@ -6,6 +6,7 @@ main{
     font-family: 'Inter', sans-serif;
 }
 
+
 .section-bg-right {
 	position: relative;
 }
@@ -67,6 +68,22 @@ main{
 	background-image: radial-gradient(ellipse at left, rgba(62, 150, 244, 0.10), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 	z-index: -1;
 }
+
+.section-bg-left_migoo {
+	position: relative;
+}
+
+.section-bg-left_migoo::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100rem;
+	background-image: radial-gradient(ellipse at left, rgba(62, 150, 244, 0.10), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+	z-index: -1;
+	margin-top: 8rem;
+}
  .section-bg-center {
     position: relative;
  }
@@ -85,6 +102,25 @@ main{
     z-index: -1;
     margin-top: 12rem;
  }
+
+ .section-bg-center_migoo {
+    position: relative;
+ }
+
+.section-bg-center_migoo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(62, 150, 244, 0.10), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    z-index: -1;
+    margin-top: 12rem;
+}
+
 
   
   

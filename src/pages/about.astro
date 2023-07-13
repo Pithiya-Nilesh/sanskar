@@ -3,10 +3,10 @@ import Layout from '../layouts/Layout.astro';
 //import '../styles.css';
 import { Image, Picture } from "@astrojs/image/components";
 import about_banner from '../../public/about-banner.svg';
-import twelve from '../../public/12+.svg';
-import fifty from '../../public/50+.svg';
-import ten from '../../public/10+.svg';
-import two from '../../public/2.svg';
+import twelve from '../../public/g_12.svg';
+import fifty from '../../public/g_50.svg';
+import ten from '../../public/g_10.svg';
+import two from '../../public/g_2.svg';
 import unique_approach from '../../public/unique-approach.svg';
 import mission from '../../public/mission.svg';
 import our_approach from '../../public/our-approach.svg';
@@ -76,12 +76,28 @@ import impactful_story from '../../public/impactful-story.svg';
 				<p class="hidden md:hidden lg:hidden xl:block mt-2 md:mt-3 lg:mt-4 text-center font-normal leading-4 md:leading-5 lg:leading-6 text-xs md:text-sm lg:text-base text-[#31393C]">Sanskar Technolab has been the leading ERPNEXT & ServiceNow implementation partner serving enterprises for the past 12 <br> years. We have a dedicated team of over 50+ skilled developers, designers, and project managers who will understand <br> clients' requirements and offer solutions accordingly.</p>
 				<p class="block md:block lg:block xl:hidden mt-2 md:mt-3 lg:mt-4 text-center font-normal leading-4 md:leading-5 lg:leading-6 text-xs md:text-sm lg:text-base text-[#31393C]">Sanskar Technolab has been the leading ERPNEXT & ServiceNow implementation partner serving enterprises for the past 12 years. We have a dedicated team of over 50+ skilled developers, designers, and project managers who will understand clients' requirements and offer solutions accordingly.</p>
 				<div class="pt-4 md:pt-6 lg:pt-8 pb-8 md:pb-12 lg:pb-14 text-center font-semibold text-[1.25rem] md:text-[1.50rem] lg:text-[1.75rem] leading-7 md:leading-8 lg:leading-9 text-[#31393C]">Sneak Peek into our growing numbers!</div>
-				<div class="flex flex-wrap justify-center items-center gap-4 md:gap-6 lg:gap-12">
-					<Image src={twelve} alt="12+ Years of Excellence" width={220} height={220} />	
-					<Image src={fifty} alt="50+ Dedicated team" width={220} height={220} />	
-					<Image src={ten} alt="10+ Industries Served!" width={220} height={220} />	
-					<Image src={two} alt="2 Work Hubs" width={220} height={220} />	
-				</div>
+					<div class="flex flex-wrap justify-center items-center justify-items-center text-center gap-6 md:gap-8 lg:gap-12 text-[#31393C]">
+						<div class="let-shadow w-52 h-54 p-5 grid justify-items-center">
+							<Image class="" src={twelve} alt="12+ Years of Excellence" width={74} height={60} />	
+							<p class="text-[3.5rem] md:text-[3.75rem] lg:text-[4rem] font-bold">12+</p>
+							<p class="font-normal text-base">Years of Excellence</p>
+						</div>
+						<div class="let-shadow w-52 h-54 p-5 grid justify-items-center">
+							<Image src={fifty} alt="12+ Years of Excellence" width={64} height={60} />	
+							<p class="text-[3.5rem] md:text-[3.75rem] lg:text-[4rem] font-bold">50+</p>
+							<p class="font-normal text-base">Dedicated team</p>
+						</div>
+						<div class="let-shadow w-52 h-54 p-5 grid justify-items-center">
+							<Image src={ten} alt="12+ Years of Excellence" width={61} height={61} />	
+							<p class="text-[3.5rem] md:text-[3.75rem] lg:text-[4rem] font-bold">10+</p>
+							<p class="font-normal text-base">Industries Served!</p>
+						</div>
+						<div class="let-shadow w-52 h-54 p-5 grid justify-items-center">
+							<Image src={two} alt="12+ Years of Excellence" width={60} height={60} />	
+							<p class="text-[3.5rem] md:text-[3.75rem] lg:text-[4rem] font-bold">2</p>
+							<p class="font-normal text-base">Work Hubs</p>
+						</div>
+					</div>
 			</div>
 		</section>
 

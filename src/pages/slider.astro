@@ -17,148 +17,244 @@ import erpnext_feature from "../../public/erpnext-feature.svg";
 
 <Layout title="slider">
     <section
-        class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap sm:text-left md:items-center pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem]"
+        class="section-bg-center mx-5 md:max-w-7xl md:mx-auto md:px-24 pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem]"
     >
-        <div
-            class="lg:w-3/12 md:w-full sm:w-full text-[#31393C] font-semibold mb-5 md:mb-0"
-        >
-            <h1 class="text-2xl md:text-3xl lg:text-4xl">
-                Lesser costs, better results!
-            </h1>
-            <p class="text-base md:text-lg lg:text-xl mt-3 md:mt-3 lg:mt-5">
-                Here's what our clients have achieved through Successful
-                Implementation for manufacturing!
+        <div class="md:text-center sm:text-left md:mb-20">
+            <h2
+                class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold"
+            >
+                Our Happy Customers.
+            </h2>
+            <p
+                class="text-[#31393C] font-semibold mt-3 md:mt-3 lg:mt-5 text-xs md:text-sm lg:text-base"
+            >
+                Customer Satisfaction drives us!
             </p>
         </div>
-        <div class="lg:w-9/12 md:w-full w-full md:pl-5">
-            <div
-                id="carouselExampleCaptions"
-                class="relative"
-                data-te-carousel-init
-                data-te-carousel-slide
-            >
-                <!--Carousel indicators-->
-                <div
-                    class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
-                    data-te-carousel-indicators
-                >
-                    <button
-                        type="button"
-                        data-te-target="#carouselExampleCaptions"
-                        data-te-slide-to="0"
-                        data-te-carousel-active
-                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-                        aria-current="true"
-                        aria-label="Slide 1"></button>
-                    <button
-                        type="button"
-                        data-te-target="#carouselExampleCaptions"
-                        data-te-slide-to="1"
-                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-                        aria-label="Slide 2"></button>
-                </div>
 
-                <!--Carousel items-->
-                <div
-                    class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
-                >
-                    <!--First item-->
-                    <div
-                        class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                        data-te-carousel-active
-                        data-te-carousel-item
-                        style="backface-visibility: hidden"
-                    >
-                        <div class="block flex gap-7 overflow-x-hidden">
-                            <div
-                                class="grid flex-shrink-0 p-5 let-shadow w-64 h-64 mr-10"
-                            >
-                                <Image
-                                    class="justify-self-end"
-                                    src={process}
-                                    alt="process"
-                                />
-                                <p
-                                    class="text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
-                                >
-                                    23%
-                                </p>
-                                <p class="text-[#31393C] font-semibold">
-                                    Faster Processes through automation.
-                                </p>
-                            </div>
-                            <div
-                                class="grid flex-shrink-0 p-5 rounded-[10px] let-shadow w-64 h-64 mr-10"
-                            >
-                                <Image
-                                    class="justify-self-end"
-                                    src={reduction}
-                                    alt="reduction"
-                                />
-                                <p
-                                    class="text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
-                                >
-                                    40%
-                                </p>
-                                <p class="text-[#31393C] font-semibold">
-                                    Reduction in Inventory Costs with real-time
-                                    visibility and optimized stock levels.
-                                </p>
-                            </div>
-                            <div
-                                class="grid flex-shrink-0 p-5 rounded-[10px] let-shadow w-64 h-64 mr-10"
-                            >
-                                <Image
-                                    class="justify-self-end"
-                                    src={improvment}
-                                    alt="improvment"
-                                />
-                                <p
-                                    class="text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
-                                >
-                                    30%
-                                </p>
-                                <p class="text-[#31393C] font-semibold">
-                                    Improvement in on-time delivery through
-                                    effective production planning and
-                                    scheduling.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Second item-->
-                    <div
-                        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                        data-te-carousel-item
-                        style="backface-visibility: hidden"
-                    >
+                <div class="c_slider">
+                <div class="c_slides">
+                    <div class="c_slide">
                         <div
-                            class="grid flex-shrink-0 p-5 rounded-[10px] let-shadow w-64 h-64 mr-10"
+                            class="happy-customer-shadow md:p-10 p-5 rounded-[20px] h-[26rem] md:h-[23rem] lg:h-[23rem] mt-5"
                         >
-                            <Image
-                                class="justify-self-end"
-                                src={rocket}
-                                alt="rocket"
-                            />
-                            <p
-                                class="text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
+                            <div
+                                class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5"
                             >
-                                50%
-                            </p>
-                            <p class="text-[#31393C] font-semibold">
-                                Reduction in Quality Issues through
-                                comprehensive quality control features.
-                            </p>
+                                <Image
+                                    class="pr-5"
+                                    src={customer}
+                                    alt="customer"
+                                />
+                                <div class="text-[#31393C]">
+                                    <p
+                                        class="text-base md:text-lg lg:text-xl leading-9 font-semibold my-3"
+                                    >
+                                        Osswal Infosystems
+                                    </p>
+                                    <p
+                                        class="text-xs md:text-sm lg:text-base pr-5"
+                                    >
+                                        Watch Mohit Nagori, Director of Osswal
+                                        Infosystems Pvt. Ltd., speak about his
+                                        company's journey with SAP and UBS. He
+                                        shares insights about our collaboration
+                                        and how to make a successful partnership
+                                        work!
+                                    </p>
+                                    <p
+                                        class="text-xs md:text-sm lg:text-base font-semibold mt-5"
+                                    >
+                                        Mohit Nagori
+                                    </p>
+                                    <p
+                                        class="text-[0.625rem] md:text-xs lg:text-sm"
+                                    >
+                                        Director, Osswal Infosystems Pvt. Ltd.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="c_slide">
+                        <div
+                            class="happy-customer-shadow md:p-10 p-5 rounded-[20px] h-[26rem] md:h-[23rem] lg:h-[23rem] mt-5"
+                        >
+                            <div
+                                class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5"
+                            >
+                                <Image
+                                    class="pr-5"
+                                    src={customer}
+                                    alt="customer"
+                                />
+                                <div class="text-[#31393C]">
+                                    <p
+                                        class="text-base md:text-lg lg:text-xl leading-9 font-semibold my-3"
+                                    >
+                                        Osswal Infosystems 1
+                                    </p>
+                                    <p
+                                        class="text-xs md:text-sm lg:text-base pr-5"
+                                    >
+                                        Watch Mohit Nagori, Director of Osswal
+                                        Infosystems Pvt. Ltd., speak about his
+                                        company's journey with SAP and UBS. He
+                                        shares insights about our collaboration
+                                        and how to make a successful partnership
+                                        work!
+                                    </p>
+                                    <p
+                                        class="text-xs md:text-sm lg:text-base font-semibold mt-5"
+                                    >
+                                        Mohit Nagori
+                                    </p>
+                                    <p
+                                        class="text-[0.625rem] md:text-xs lg:text-sm"
+                                    >
+                                        Director, Osswal Infosystems Pvt. Ltd.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c_slide">
+                        <div
+                            class="happy-customer-shadow md:p-10 p-5 rounded-[20px] h-[26rem] md:h-[23rem] lg:h-[23rem] mt-5"
+                        >
+                            <div
+                                class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5"
+                            >
+                                <Image
+                                    class="pr-5"
+                                    src={customer}
+                                    alt="customer"
+                                />
+                                <div class="text-[#31393C]">
+                                    <p
+                                        class="text-base md:text-lg lg:text-xl leading-9 font-semibold my-3"
+                                    >
+                                        Osswal Infosystems 2
+                                    </p>
+                                    <p
+                                        class="text-xs md:text-sm lg:text-base pr-5"
+                                    >
+                                        Watch Mohit Nagori, Director of Osswal
+                                        Infosystems Pvt. Ltd., speak about his
+                                        company's journey with SAP and UBS. He
+                                        shares insights about our collaboration
+                                        and how to make a successful partnership
+                                        work!
+                                    </p>
+                                    <p
+                                        class="text-xs md:text-sm lg:text-base font-semibold mt-5"
+                                    >
+                                        Mohit Nagori
+                                    </p>
+                                    <p
+                                        class="text-[0.625rem] md:text-xs lg:text-sm"
+                                    >
+                                        Director, Osswal Infosystems Pvt. Ltd.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
             </div>
+            <div class="flex justify-center gap-3 mt-10">
+				<Image src={previousbtn} alt="previousbtn" id="prev" />
+				<Image src={nextbtn} alt="nextbtn" id="next" />
+			</div>
         </div>
     </section>
-</Layout>
 
-<style>
-    .box {
-        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.07);
-    }
-</style>
+    <style>
+        /* .let-shadow {
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.07);
+        } */
+
+        .c_slider {
+            /* width: 400px; */
+            overflow: hidden;
+        }
+
+        .c_slides {
+            display: flex;
+            width: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .c_slide {
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .prev,
+        .next {
+            margin-top: 10px;
+        }
+        .happy-customer-shadow {
+		box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.07);
+	}
+    </style>
+
+    <script>
+        // Get the slider elements
+        const slider = document.querySelector(".c_slider");
+        const slides = document.querySelector(".c_slides");
+        const prevBtn = document.querySelector("#prev");
+        const nextBtn = document.querySelector("#next");
+
+        // Initialize variables
+        let slideIndex = 0;
+        const slideWidth = slider.clientWidth;
+        let autoSlideInterval;
+
+        // Move slides to specified index
+        const moveToSlide = (index) => {
+            slides.style.transform = `translateX(-${slideWidth * index}px)`;
+        };
+
+        // Move to next slide
+        const nextSlide = () => {
+            slideIndex++;
+            if (slideIndex >= slides.children.length) {
+                slideIndex = 0;
+            }
+            moveToSlide(slideIndex);
+        };
+
+        // Move to previous slide
+        const prevSlide = () => {
+            slideIndex--;
+            if (slideIndex < 0) {
+                slideIndex = slides.children.length - 1;
+            }
+            moveToSlide(slideIndex);
+        };
+
+        // Start auto sliding
+        const startAutoSlide = () => {
+            autoSlideInterval = setInterval(nextSlide, 800000); // Change slide every 3 seconds
+        };
+
+        // Stop auto sliding
+        const stopAutoSlide = () => {
+            clearInterval(autoSlideInterval);
+        };
+
+        // Attach event listeners to buttons
+        nextBtn.addEventListener("click", () => {
+            nextSlide();
+            stopAutoSlide();
+        });
+        prevBtn.addEventListener("click", () => {
+            prevSlide();
+            stopAutoSlide();
+        });
+
+        // Start auto slide on page load
+        startAutoSlide();
+    </script>
+</Layout>
