@@ -3474,39 +3474,41 @@ import form_bg from "../../public/form-bg.svg";
 	// // Auto slide every 3 seconds
 	// setInterval(nextSlide, 3000);
 
+
+
 	// scroll next
-	document
-		.getElementById("nextScrollButton")
-		.addEventListener("click", () => {
-			// Get the container element by its ID
-			const containerElement = document.getElementById("scrollContainer");
+	// document
+	// 	.getElementById("nextScrollButton")
+	// 	.addEventListener("click", () => {
+	// 		// Get the container element by its ID
+	// 		const containerElement = document.getElementById("scrollContainer");
 
-			// Calculate the scroll amount
-			const scrollAmount = containerElement.offsetWidth;
+	// 		// Calculate the scroll amount
+	// 		const scrollAmount = containerElement.offsetWidth;
 
-			// Perform horizontal scroll using the scrollBy method
-			containerElement.scrollBy({
-				top: 0,
-				left: scrollAmount,
-				behavior: "smooth",
-			});
-		});
+	// 		// Perform horizontal scroll using the scrollBy method
+	// 		containerElement.scrollBy({
+	// 			top: 0,
+	// 			left: scrollAmount,
+	// 			behavior: "smooth",
+	// 		});
+	// 	});
 
 	// scroll pre.
-	document.getElementById("preScrollButton").addEventListener("click", () => {
-		// Get the container element by its ID
-		const containerElement = document.getElementById("scrollContainer");
+	// document.getElementById("preScrollButton").addEventListener("click", () => {
+	// 	// Get the container element by its ID
+	// 	const containerElement = document.getElementById("scrollContainer");
 
-		// Calculate the scroll amount
-		const scrollAmount = -containerElement.offsetWidth;
+	// 	// Calculate the scroll amount
+	// 	const scrollAmount = -containerElement.offsetWidth;
 
-		// Perform horizontal scroll using the scrollBy method
-		containerElement.scrollBy({
-			top: 0,
-			left: scrollAmount,
-			behavior: "smooth",
-		});
-	});
+	// 	// Perform horizontal scroll using the scrollBy method
+	// 	containerElement.scrollBy({
+	// 		top: 0,
+	// 		left: scrollAmount,
+	// 		behavior: "smooth",
+	// 	});
+	// });
 
 	//scroll autometic when slide is active construction or manufacturing
 	logElementsWithAriaCurrent();
