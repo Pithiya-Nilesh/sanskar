@@ -2924,451 +2924,453 @@ import form_bg from "../../public/form-bg.svg";
 	servicenow.addEventListener("click", show_servicenow);
 
 	// show manufacturing content and hide other content when click on manufacturing
-	function show_manufaturing() {
-		document.getElementById("menuf_c").classList.remove("hidden");
-		document.getElementById("text_c").classList.remove("!flex");
-		document.getElementById("health_c").classList.remove("!flex");
-		document.getElementById("rent_c").classList.remove("!flex");
-		document.getElementById("construction_c").classList.remove("!flex");
-		document.getElementById("crowdfunding_c").classList.remove("!flex");
-		document.getElementById("hr_c").classList.remove("!flex");
-		document.getElementById("ayurveda_c").classList.remove("!flex");
+	// function show_manufaturing() {
+	// 	document.getElementById("menuf_c").classList.remove("hidden");
+	// 	document.getElementById("text_c").classList.remove("!flex");
+	// 	document.getElementById("health_c").classList.remove("!flex");
+	// 	document.getElementById("rent_c").classList.remove("!flex");
+	// 	document.getElementById("construction_c").classList.remove("!flex");
+	// 	document.getElementById("crowdfunding_c").classList.remove("!flex");
+	// 	document.getElementById("hr_c").classList.remove("!flex");
+	// 	document.getElementById("ayurveda_c").classList.remove("!flex");
 
-		document
-			.getElementById("menuf1")
-			.classList.add("industries-shadow", "rounded-lg");
-		document.getElementById("menuf").classList.add("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("menuf1")
+	// 		.classList.add("industries-shadow", "rounded-lg");
+	// 	document.getElementById("menuf").classList.add("text-[#3E96F4]");
 
-		document
-			.getElementById("text1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("text").classList.remove("text-[#3E96F4]");
-		document
-			.getElementById("health1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("health").classList.remove("text-[#3E96F4]");
-		document
-			.getElementById("rent1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("rent").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("text1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("text").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("health1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("health").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("rent1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("rent").classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("construction1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document
-			.getElementById("construction")
-			.classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("construction1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document
+	// 		.getElementById("construction")
+	// 		.classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("crowdfunding1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document
-			.getElementById("crowdfunding")
-			.classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("crowdfunding1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document
+	// 		.getElementById("crowdfunding")
+	// 		.classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("hr1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("hr").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("hr1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("hr").classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("ayurveda1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
-	}
-	const menu1 = document.getElementById("menuf");
-	menu1.addEventListener("click", show_manufaturing);
+	// 	document
+	// 		.getElementById("ayurveda1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
+	// }
+	// const menu1 = document.getElementById("menuf");
+	// menu1.addEventListener("click", show_manufaturing);
 
-	// show textile content and hide other content when click on textile
-	function show_textile() {
-		document.getElementById("text_c").classList.add("!flex");
-		document.getElementById("menuf_c").classList.add("hidden");
-		document.getElementById("health_c").classList.remove("!flex");
-		document.getElementById("rent_c").classList.remove("!flex");
-		document.getElementById("construction_c").classList.remove("!flex");
-		document.getElementById("crowdfunding_c").classList.remove("!flex");
-		document.getElementById("hr_c").classList.remove("!flex");
-		document.getElementById("ayurveda_c").classList.remove("!flex");
+	// // show textile content and hide other content when click on textile
+	// function show_textile() {
+	// 	document.getElementById("text_c").classList.add("!flex");
+	// 	document.getElementById("menuf_c").classList.add("hidden");
+	// 	document.getElementById("health_c").classList.remove("!flex");
+	// 	document.getElementById("rent_c").classList.remove("!flex");
+	// 	document.getElementById("construction_c").classList.remove("!flex");
+	// 	document.getElementById("crowdfunding_c").classList.remove("!flex");
+	// 	document.getElementById("hr_c").classList.remove("!flex");
+	// 	document.getElementById("ayurveda_c").classList.remove("!flex");
 
-		document
-			.getElementById("text1")
-			.classList.add("industries-shadow", "rounded-lg");
-		document.getElementById("text").classList.add("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("text1")
+	// 		.classList.add("industries-shadow", "rounded-lg");
+	// 	document.getElementById("text").classList.add("text-[#3E96F4]");
 
-		document
-			.getElementById("menuf1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("menuf").classList.remove("text-[#3E96F4]");
-		document
-			.getElementById("health1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("health").classList.remove("text-[#3E96F4]");
-		document
-			.getElementById("rent1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("rent").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("menuf1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("menuf").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("health1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("health").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("rent1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("rent").classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("construction1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document
-			.getElementById("construction")
-			.classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("construction1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document
+	// 		.getElementById("construction")
+	// 		.classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("crowdfunding1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document
-			.getElementById("crowdfunding")
-			.classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("crowdfunding1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document
+	// 		.getElementById("crowdfunding")
+	// 		.classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("hr1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("hr").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("hr1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("hr").classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("ayurveda1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
-	}
-	const textile = document.getElementById("text");
-	textile.addEventListener("click", show_textile);
+	// 	document
+	// 		.getElementById("ayurveda1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
+	// }
+	// const textile = document.getElementById("text");
+	// textile.addEventListener("click", show_textile);
 
-	// show healthcare content and hide other content when click on healthcare
-	function show_health() {
-		document.getElementById("health_c").classList.add("!flex");
-		document.getElementById("menuf_c").classList.add("hidden");
-		document.getElementById("text_c").classList.remove("!flex");
-		document.getElementById("rent_c").classList.remove("!flex");
-		document.getElementById("construction_c").classList.remove("!flex");
-		document.getElementById("crowdfunding_c").classList.remove("!flex");
-		document.getElementById("hr_c").classList.remove("!flex");
-		document.getElementById("ayurveda_c").classList.remove("!flex");
+	// // show healthcare content and hide other content when click on healthcare
+	// function show_health() {
+	// 	document.getElementById("health_c").classList.add("!flex");
+	// 	document.getElementById("menuf_c").classList.add("hidden");
+	// 	document.getElementById("text_c").classList.remove("!flex");
+	// 	document.getElementById("rent_c").classList.remove("!flex");
+	// 	document.getElementById("construction_c").classList.remove("!flex");
+	// 	document.getElementById("crowdfunding_c").classList.remove("!flex");
+	// 	document.getElementById("hr_c").classList.remove("!flex");
+	// 	document.getElementById("ayurveda_c").classList.remove("!flex");
 
-		document
-			.getElementById("health1")
-			.classList.add("industries-shadow", "rounded-lg");
-		document.getElementById("health").classList.add("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("health1")
+	// 		.classList.add("industries-shadow", "rounded-lg");
+	// 	document.getElementById("health").classList.add("text-[#3E96F4]");
 
-		document
-			.getElementById("menuf1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("menuf").classList.remove("text-[#3E96F4]");
-		document
-			.getElementById("text1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("text").classList.remove("text-[#3E96F4]");
-		document
-			.getElementById("rent1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("rent").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("menuf1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("menuf").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("text1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("text").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("rent1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("rent").classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("construction1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document
-			.getElementById("construction")
-			.classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("construction1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document
+	// 		.getElementById("construction")
+	// 		.classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("crowdfunding1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document
-			.getElementById("crowdfunding")
-			.classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("crowdfunding1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document
+	// 		.getElementById("crowdfunding")
+	// 		.classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("hr1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("hr").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("hr1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("hr").classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("ayurveda1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
-	}
-	const health = document.getElementById("health");
-	health.addEventListener("click", show_health);
+	// 	document
+	// 		.getElementById("ayurveda1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
+	// }
+	// const health = document.getElementById("health");
+	// health.addEventListener("click", show_health);
 
-	// show rent content and hide other content when click on rent
-	function show_rent() {
-		document.getElementById("rent_c").classList.add("!flex");
-		document.getElementById("menuf_c").classList.add("hidden");
-		document.getElementById("text_c").classList.remove("!flex");
-		document.getElementById("health_c").classList.remove("!flex");
-		document.getElementById("construction_c").classList.remove("!flex");
-		document.getElementById("crowdfunding_c").classList.remove("!flex");
-		document.getElementById("hr_c").classList.remove("!flex");
-		document.getElementById("ayurveda_c").classList.remove("!flex");
+	// // show rent content and hide other content when click on rent
+	// function show_rent() {
+	// 	document.getElementById("rent_c").classList.add("!flex");
+	// 	document.getElementById("menuf_c").classList.add("hidden");
+	// 	document.getElementById("text_c").classList.remove("!flex");
+	// 	document.getElementById("health_c").classList.remove("!flex");
+	// 	document.getElementById("construction_c").classList.remove("!flex");
+	// 	document.getElementById("crowdfunding_c").classList.remove("!flex");
+	// 	document.getElementById("hr_c").classList.remove("!flex");
+	// 	document.getElementById("ayurveda_c").classList.remove("!flex");
 
-		document
-			.getElementById("rent1")
-			.classList.add("industries-shadow", "rounded-lg");
-		document.getElementById("rent").classList.add("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("rent1")
+	// 		.classList.add("industries-shadow", "rounded-lg");
+	// 	document.getElementById("rent").classList.add("text-[#3E96F4]");
 
-		document
-			.getElementById("menuf1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("menuf").classList.remove("text-[#3E96F4]");
-		document
-			.getElementById("text1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("text").classList.remove("text-[#3E96F4]");
-		document
-			.getElementById("health1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("health").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("menuf1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("menuf").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("text1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("text").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("health1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("health").classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("construction1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document
-			.getElementById("construction")
-			.classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("construction1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document
+	// 		.getElementById("construction")
+	// 		.classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("crowdfunding1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document
-			.getElementById("crowdfunding")
-			.classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("crowdfunding1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document
+	// 		.getElementById("crowdfunding")
+	// 		.classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("hr1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("hr").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("hr1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("hr").classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("ayurveda1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
-	}
-	const rent = document.getElementById("rent");
-	rent.addEventListener("click", show_rent);
+	// 	document
+	// 		.getElementById("ayurveda1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
+	// }
+	// const rent = document.getElementById("rent");
+	// rent.addEventListener("click", show_rent);
 
-	// show construction content and hide other content when click on construction
-	function show_construction() {
-		document.getElementById("construction_c").classList.add("!flex");
-		document.getElementById("menuf_c").classList.add("hidden");
-		document.getElementById("text_c").classList.remove("!flex");
-		document.getElementById("health_c").classList.remove("!flex");
-		document.getElementById("rent_c").classList.remove("!flex");
-		document.getElementById("crowdfunding_c").classList.remove("!flex");
-		document.getElementById("hr_c").classList.remove("!flex");
-		document.getElementById("ayurveda_c").classList.remove("!flex");
+	// // show construction content and hide other content when click on construction
+	// function show_construction() {
+	// 	document.getElementById("construction_c").classList.add("!flex");
+	// 	document.getElementById("menuf_c").classList.add("hidden");
+	// 	document.getElementById("text_c").classList.remove("!flex");
+	// 	document.getElementById("health_c").classList.remove("!flex");
+	// 	document.getElementById("rent_c").classList.remove("!flex");
+	// 	document.getElementById("crowdfunding_c").classList.remove("!flex");
+	// 	document.getElementById("hr_c").classList.remove("!flex");
+	// 	document.getElementById("ayurveda_c").classList.remove("!flex");
 
-		document
-			.getElementById("construction1")
-			.classList.add("industries-shadow", "rounded-lg");
-		document.getElementById("construction").classList.add("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("construction1")
+	// 		.classList.add("industries-shadow", "rounded-lg");
+	// 	document.getElementById("construction").classList.add("text-[#3E96F4]");
 
-		document
-			.getElementById("menuf1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("menuf").classList.remove("text-[#3E96F4]");
-		document
-			.getElementById("text1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("text").classList.remove("text-[#3E96F4]");
-		document
-			.getElementById("health1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("health").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("menuf1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("menuf").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("text1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("text").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("health1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("health").classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("rent1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("rent").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("rent1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("rent").classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("crowdfunding1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document
-			.getElementById("crowdfunding")
-			.classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("crowdfunding1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document
+	// 		.getElementById("crowdfunding")
+	// 		.classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("hr1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("hr").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("hr1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("hr").classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("ayurveda1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
-	}
-	const construction = document.getElementById("construction");
-	construction.addEventListener("click", show_construction);
+	// 	document
+	// 		.getElementById("ayurveda1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
+	// }
+	// const construction = document.getElementById("construction");
+	// construction.addEventListener("click", show_construction);
 
-	// show crowdfunding content and hide other content when click on crowdfunding
-	function show_crowdfunding() {
-		document.getElementById("crowdfunding_c").classList.add("!flex");
-		document.getElementById("menuf_c").classList.add("hidden");
-		document.getElementById("text_c").classList.remove("!flex");
-		document.getElementById("health_c").classList.remove("!flex");
-		document.getElementById("rent_c").classList.remove("!flex");
-		document.getElementById("construction_c").classList.remove("!flex");
-		document.getElementById("hr_c").classList.remove("!flex");
-		document.getElementById("ayurveda_c").classList.remove("!flex");
+	// // show crowdfunding content and hide other content when click on crowdfunding
+	// function show_crowdfunding() {
+	// 	document.getElementById("crowdfunding_c").classList.add("!flex");
+	// 	document.getElementById("menuf_c").classList.add("hidden");
+	// 	document.getElementById("text_c").classList.remove("!flex");
+	// 	document.getElementById("health_c").classList.remove("!flex");
+	// 	document.getElementById("rent_c").classList.remove("!flex");
+	// 	document.getElementById("construction_c").classList.remove("!flex");
+	// 	document.getElementById("hr_c").classList.remove("!flex");
+	// 	document.getElementById("ayurveda_c").classList.remove("!flex");
 
-		document
-			.getElementById("crowdfunding1")
-			.classList.add("industries-shadow", "rounded-lg");
-		document.getElementById("crowdfunding").classList.add("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("crowdfunding1")
+	// 		.classList.add("industries-shadow", "rounded-lg");
+	// 	document.getElementById("crowdfunding").classList.add("text-[#3E96F4]");
 
-		document
-			.getElementById("menuf1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("menuf").classList.remove("text-[#3E96F4]");
-		document
-			.getElementById("text1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("text").classList.remove("text-[#3E96F4]");
-		document
-			.getElementById("health1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("health").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("menuf1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("menuf").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("text1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("text").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("health1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("health").classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("rent1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("rent").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("rent1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("rent").classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("construction1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document
-			.getElementById("construction")
-			.classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("construction1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document
+	// 		.getElementById("construction")
+	// 		.classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("hr1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("hr").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("hr1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("hr").classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("ayurveda1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
-	}
-	const crowdfunding = document.getElementById("crowdfunding");
-	crowdfunding.addEventListener("click", show_crowdfunding);
+	// 	document
+	// 		.getElementById("ayurveda1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
+	// }
+	// const crowdfunding = document.getElementById("crowdfunding");
+	// crowdfunding.addEventListener("click", show_crowdfunding);
 
-	// show hr content and hide other content when click on hr
-	function show_hr() {
-		document.getElementById("hr_c").classList.add("!flex");
-		document.getElementById("menuf_c").classList.add("hidden");
-		document.getElementById("text_c").classList.remove("!flex");
-		document.getElementById("health_c").classList.remove("!flex");
-		document.getElementById("rent_c").classList.remove("!flex");
-		document.getElementById("construction_c").classList.remove("!flex");
-		document.getElementById("crowdfunding_c").classList.remove("!flex");
-		document.getElementById("ayurveda_c").classList.remove("!flex");
+	// // show hr content and hide other content when click on hr
+	// function show_hr() {
+	// 	document.getElementById("hr_c").classList.add("!flex");
+	// 	document.getElementById("menuf_c").classList.add("hidden");
+	// 	document.getElementById("text_c").classList.remove("!flex");
+	// 	document.getElementById("health_c").classList.remove("!flex");
+	// 	document.getElementById("rent_c").classList.remove("!flex");
+	// 	document.getElementById("construction_c").classList.remove("!flex");
+	// 	document.getElementById("crowdfunding_c").classList.remove("!flex");
+	// 	document.getElementById("ayurveda_c").classList.remove("!flex");
 
-		document
-			.getElementById("hr1")
-			.classList.add("industries-shadow", "rounded-lg");
-		document.getElementById("hr").classList.add("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("hr1")
+	// 		.classList.add("industries-shadow", "rounded-lg");
+	// 	document.getElementById("hr").classList.add("text-[#3E96F4]");
 
-		document
-			.getElementById("menuf1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("menuf").classList.remove("text-[#3E96F4]");
-		document
-			.getElementById("text1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("text").classList.remove("text-[#3E96F4]");
-		document
-			.getElementById("health1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("health").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("menuf1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("menuf").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("text1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("text").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("health1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("health").classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("rent1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("rent").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("rent1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("rent").classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("construction1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document
-			.getElementById("construction")
-			.classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("construction1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document
+	// 		.getElementById("construction")
+	// 		.classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("crowdfunding1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document
-			.getElementById("crowdfunding")
-			.classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("crowdfunding1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document
+	// 		.getElementById("crowdfunding")
+	// 		.classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("ayurveda1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
-	}
-	const hr = document.getElementById("hr");
-	hr.addEventListener("click", show_hr);
+	// 	document
+	// 		.getElementById("ayurveda1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("ayurveda").classList.remove("text-[#3E96F4]");
+	// }
+	// const hr = document.getElementById("hr");
+	// hr.addEventListener("click", show_hr);
 
-	// show ayurveda content and hide other content when click on ayurveda
-	function show_ayurveda() {
-		document.getElementById("ayurveda_c").classList.add("!flex");
-		document.getElementById("menuf_c").classList.add("hidden");
-		document.getElementById("text_c").classList.remove("!flex");
-		document.getElementById("health_c").classList.remove("!flex");
-		document.getElementById("rent_c").classList.remove("!flex");
-		document.getElementById("construction_c").classList.remove("!flex");
-		document.getElementById("crowdfunding_c").classList.remove("!flex");
-		document.getElementById("hr_c").classList.remove("!flex");
+	// // show ayurveda content and hide other content when click on ayurveda
+	// function show_ayurveda() {
+	// 	document.getElementById("ayurveda_c").classList.add("!flex");
+	// 	document.getElementById("menuf_c").classList.add("hidden");
+	// 	document.getElementById("text_c").classList.remove("!flex");
+	// 	document.getElementById("health_c").classList.remove("!flex");
+	// 	document.getElementById("rent_c").classList.remove("!flex");
+	// 	document.getElementById("construction_c").classList.remove("!flex");
+	// 	document.getElementById("crowdfunding_c").classList.remove("!flex");
+	// 	document.getElementById("hr_c").classList.remove("!flex");
 
-		document
-			.getElementById("ayurveda1")
-			.classList.add("industries-shadow", "rounded-lg");
-		document.getElementById("ayurveda").classList.add("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("ayurveda1")
+	// 		.classList.add("industries-shadow", "rounded-lg");
+	// 	document.getElementById("ayurveda").classList.add("text-[#3E96F4]");
 
-		document
-			.getElementById("menuf1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("menuf").classList.remove("text-[#3E96F4]");
-		document
-			.getElementById("text1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("text").classList.remove("text-[#3E96F4]");
-		document
-			.getElementById("health1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("health").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("menuf1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("menuf").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("text1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("text").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("health1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("health").classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("rent1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("rent").classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("rent1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("rent").classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("construction1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document
-			.getElementById("construction")
-			.classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("construction1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document
+	// 		.getElementById("construction")
+	// 		.classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("crowdfunding1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document
-			.getElementById("crowdfunding")
-			.classList.remove("text-[#3E96F4]");
+	// 	document
+	// 		.getElementById("crowdfunding1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document
+	// 		.getElementById("crowdfunding")
+	// 		.classList.remove("text-[#3E96F4]");
 
-		document
-			.getElementById("hr1")
-			.classList.remove("industries-shadow", "rounded-lg");
-		document.getElementById("hr").classList.remove("text-[#3E96F4]");
-	}
-	const ayurveda = document.getElementById("ayurveda");
-	ayurveda.addEventListener("click", show_ayurveda);
+	// 	document
+	// 		.getElementById("hr1")
+	// 		.classList.remove("industries-shadow", "rounded-lg");
+	// 	document.getElementById("hr").classList.remove("text-[#3E96F4]");
+	// }
+	// const ayurveda = document.getElementById("ayurveda");
+	// ayurveda.addEventListener("click", show_ayurveda);
 
 	// show and hide faq content
 	// show faq1
+	
+	
 	const faq1 = document.getElementById("faq1");
 	faq1.addEventListener("click", show_faq1);
 
@@ -3526,6 +3528,8 @@ import form_bg from "../../public/form-bg.svg";
 				const containerElement =
 					document.getElementById("scrollContainer");
 				const scrollAmount = containerElement.offsetWidth;
+				// const scrollAmount = 400
+				console.log("next", scrollAmount)
 				containerElement.scrollBy({
 					top: 0,
 					left: scrollAmount,
@@ -3537,11 +3541,13 @@ import form_bg from "../../public/form-bg.svg";
 				const containerElement =
 					document.getElementById("scrollContainer");
 				const scrollAmount = -containerElement.offsetWidth;
+				console.log("pre", scrollAmount)
 				containerElement.scrollBy({
 					top: 0,
 					left: scrollAmount,
 					behavior: "smooth",
 				});
+				// window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 			}
 		});
 	}
