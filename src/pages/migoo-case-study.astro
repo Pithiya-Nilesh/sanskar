@@ -45,11 +45,58 @@ import m_adhar from '../../public/m_adhar.svg';
 
 <Layout title="Migoo case study">
 	<main>
+
+        <!-- <section
+            class="section-bg-right flex h-[calc(100vh-10vh)] relative flex-wrap items-center justify-evenly sm:flex-col-reverse"
+        >
+            <Image
+                class="lg:absolute lg:right-0 lg:w-5/12 w-full md:w-full"
+                src={migoo_banner}
+                alt="banner image"
+                width={737}
+                height={509}
+            />
+            <div class=" flex">
+                <div class="lg:w-7/12 w-full md:w-full mx-5 md:max-w-7xl md:mx-auto md:px-24">
+                    <h1
+                        class="lg:text-[3rem] text-[1.75rem] md:text-[3rem] leading-9 md:leading-[3.5rem] text-[#31393C] font-semibold lg:leading-[3.75rem] xl:leading-[4rem]"
+                    >
+                        Developed Most Complex ERPNEXT Portal for Construction
+                        Industry!
+                    </h1>
+                    <p
+                        class="text-[#31393C] lg:leading-7 font-normal lg:text-lg text-sm md:text-base leading-5 md:leading-6 mt-5"
+                    >
+                        Our team at Sanskar Technolabs has developed a
+                        full-fledged platform by leveraging ERPNEXT for renting,
+                        buying, selling and managing heavy-duty construction
+                        equipment.
+                    </p>
+                    <div
+                        class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 md:w-72 sm:w-auto"
+                    >
+                        <a
+                            href="#"
+                            class="text-white text-base font-semibold font-inter"
+                            >Schedule a Free demo now</a
+                        >
+                        <Image
+                            src={right}
+                            width={6}
+                            height={12}
+                            alt="right arrow "
+                        />
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
 		<section
             class="section-bg-right hidden lg:flex h-[calc(100vh-10vh)] relative flex-wrap items-center"
         >
             <Image
-                class="absolute right-0 w-5/12"
+                class="absolute right-0 w-5/12 h-[33rem]"
                 src={migoo_banner}
                 alt="banner image"
                 width={737}
@@ -93,14 +140,14 @@ import m_adhar from '../../public/m_adhar.svg';
 		<section
             class="section-bg-right mt-10 md:flex lg:hidden"
         >
-        <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex-wrap h-[calc(100vh-10vh)] items-center">
-            <div class="">
-                <h1
+        <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap h-[calc(100vh-10vh)] items-center justify-evenly">
+            <div>
+                <div
                     class="text-[1.75rem] md:text-[3rem] leading-9 md:leading-[3.5rem] text-[#31393C] font-semibold"
                 >
                     Developed Most Complex ERPNEXT Portal for Construction
                     Industry!
-                </h1>
+                </div>
                 <p
                     class="text[#31393C] text-sm md:text-base leading-5 md:leading-6 mt-5"
                 >
@@ -117,10 +164,11 @@ import m_adhar from '../../public/m_adhar.svg';
                     <Image src={right} alt="right" class="ml-0" />
                 </div>
             </div>
-            <Image src={migoo_banner} alt="manu-banner" class="mt-5" />
+            <Image src={migoo_banner} alt="manu-banner" />
         </div>
         </section>
-		<section class="pt-[6.25rem] md:pt-[6.25rem] lg:pt-[5rem] xl:pt-[0rem]  mt-0 sm:mt-48 md:mt-72 lg:mt-0 xl:mt-0">
+
+		<section class="pt-[6.25rem] md:pt-0 lg:pt-[5rem] xl:pt-[0rem]  mt-0 sm:mt-48 md:mt-0 lg:mt-0 xl:mt-0">
 			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24">
 				<div class="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#31393C] leading-[2.25rem] md:leading-[2.75rem] lg:leading-[3rem]">Subtle Glimpses of the Project.</div>
 				<div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-0 md:gap-10 lg:gap-10 mt-4 md:mt-8 lg:mt-8">
@@ -174,80 +222,54 @@ import m_adhar from '../../public/m_adhar.svg';
 			</div>
 		</section>
 
-		<section class="hidden md:hidden lg:block xl:block pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem]">
-			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24">
-				<h2 class="text-2xl md:text-3xl lg:text-4xl text-center text-[#31393C] font-semibold leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem]">Let the Numbers speak for itself!</h2>
-				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11 mt-10 md:mt-10 lg:mt-16 text-[#31393C] text-center">
-					<div class="flex flex-col items-center ">
-						<Image src={m_cost_efective} alt="Cost efficient" width={64} height={72} />
-						<p class="text-[2.75rem] md:text-[3.75rem] lg:text-[4rem] font-bold">60%</p>
-						<p class="text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6 font-medium">cost savings in development, ensuring a cost-efficient solution for migoo.in.</p>
-					</div>
 
-					<div class="flex flex-col items-center ">
-						<Image src={m_reduction_time} alt="Reduction Time" width={72} height={72} />
-						<p class="text-[2.75rem] md:text-[3.75rem] lg:text-[4rem] font-bold">45%</p>
-						<p class="text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6 font-medium">reduction in launching time, launched in just 4 months.</p>
-					</div>
+        <section class="pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem]">
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl text-center text-[#31393C] font-semibold leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem]">Let the Numbers speak for itself!</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-11 mt-10 md:mt-14 lg:mt-16 text-[#31393C] text-center">
+                <div class="flex flex-col items-center ">
+                    <Image src={m_cost_efective} alt="Cost Efective" width={64} height={72} />
+                    <p class="text-[2.75rem] md:text-[3.75rem] lg:text-[4rem] font-bold">60%</p>
+                    <p class="text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6 font-medium">cost savings in development, ensuring a cost-efficient solution for migoo.in.</p>
+                </div>
 
-					<div class="flex flex-col items-center">
-						<Image src={m_equipment} alt="Equipment" width={72} height={72} />
-						<p class="text-[2.75rem] md:text-[3.75rem] lg:text-[4rem] font-bold">3000+</p>
-						<p class="text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6 font-medium">equipment onboarded within just the first month of launching.</p>
-					</div>
+                <div class="flex flex-col items-center ">
+                    <Image src={m_reduction_time} alt="Reduction time" width={72} height={72} />
+                    <p class="text-[2.75rem] md:text-[3.75rem] lg:text-[4rem] font-bold">45%</p>
+                    <p class="text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6 font-medium">reduction in launching time, launched in just 4 months.</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <Image src={m_equipment} alt="Equipment" width={72} height={72} />
+                    <p class="text-[2.75rem] md:text-[3.75rem] lg:text-[4rem] font-bold">3000+</p>
+                    <p class="text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6 font-medium">equipment onboarded within just the first month of launching.</p>
+                </div>
+
+                <div class="flex flex-col items-center md:flex lg:hidden ">
+					<Image src={m_android} alt="Android" width={69} height={72} />
+					<p class="text-[2.75rem] md:text-[3.75rem] lg:text-[4rem] font-bold">35 days</p>
+					<p class="text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6 font-medium">to launch iOs and Android app(Within record time).</p>
 				</div>
-				
-				<div class="grid grid-cols-2 gap-4 px-0 md:px-0 lg:px-28 xl:px-48 lg:gap-10 xl:gap-16 mt-16 text-[#31393C] text-center">
 
-					<div class="flex flex-col items-center ">
-						<Image src={m_android} alt="Android" width={69} height={72} />
-						<p class="text-[2.75rem] md:text-[3.75rem] lg:text-[4rem] font-bold">35 days</p>
-						<p class="text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6 font-medium">to launch iOs and Android app(Within record time).</p>
-					</div>
-
-					<div class="flex flex-col items-center">
-						<Image src={m_performance} alt="Performance" width={104} height={72} />
-						<p class="text-[2.75rem] md:text-[3.75rem] lg:text-[4rem] font-bold">90%</p>
-						<p class="text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6 font-medium">of page load performance.</p>
-					</div>
+				<div class="flex flex-col items-center md:flex lg:hidden">
+					<Image src={m_performance} alt="Performance" width={104} height={72} />
+					<p class="text-[2.75rem] md:text-[3.75rem] lg:text-[4rem] font-bold">90%</p>
+					<p class="text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6 font-medium">of page load performance.</p>
+				</div>
+            </div>
+            <div class="hidden md:hidden lg:grid grid-cols-2 gap-4 px-0 md:px-0 lg:px-28 xl:px-48 lg:gap-10 xl:gap-16 mt-16 text-[#31393C] text-center">
+				<div class="flex flex-col items-center ">
+					<Image src={m_android} alt="Android" width={69} height={72} />
+					<p class="text-[2.75rem] md:text-[3.75rem] lg:text-[4rem] font-bold">35 days</p>
+					<p class="text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6 font-medium">to launch iOs and Android app(Within record time).</p>
+				</div>
+				<div class="flex flex-col items-center">
+					<Image src={m_performance} alt="Performance" width={104} height={72} />
+					<p class="text-[2.75rem] md:text-[3.75rem] lg:text-[4rem] font-bold">90%</p>
+					<p class="text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6 font-medium">of page load performance.</p>
 				</div>
 			</div>
-		</section>
-
-		<section class="block md:block lg:hidden xl:hidden pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem]">
-			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24">
-				<h2 class="text-2xl md:text-3xl lg:text-4xl text-center text-[#31393C] font-semibold leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem]">Let the Numbers speak for itself!</h2>
-				<div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-11 mt-10 md:mt-14 lg:mt-16 text-[#31393C] text-center">
-					<div class="flex flex-col items-center ">
-						<Image src={m_cost_efective} alt="Cost Efective" width={64} height={72} />
-						<p class="text-[2.75rem] md:text-[3.75rem] lg:text-[4rem] font-bold">60%</p>
-						<p class="text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6 font-medium">cost savings in development, ensuring a cost-efficient solution for migoo.in.</p>
-					</div>
-
-					<div class="flex flex-col items-center ">
-						<Image src={m_reduction_time} alt="Reduction time" width={72} height={72} />
-						<p class="text-[2.75rem] md:text-[3.75rem] lg:text-[4rem] font-bold">45%</p>
-						<p class="text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6 font-medium">reduction in launching time, launched in just 4 months.</p>
-					</div>
-
-					<div class="flex flex-col items-center">
-						<Image src={m_equipment} alt="Equipment" width={72} height={72} />
-						<p class="text-[2.75rem] md:text-[3.75rem] lg:text-[4rem] font-bold">3000+</p>
-						<p class="text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6 font-medium">equipment onboarded within just the first month of launching.</p>
-					</div>
-					<div class="flex flex-col items-center ">
-						<Image src={m_android} alt="Android" width={69} height={72} />
-						<p class="text-[2.75rem] md:text-[3.75rem] lg:text-[4rem] font-bold">35 days</p>
-						<p class="text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6 font-medium">to launch iOs and Android app(Within record time).</p>
-					</div>
-
-					<div class="flex flex-col items-center">
-						<Image src={m_performance} alt="Performance" width={104} height={72} />
-						<p class="text-[2.75rem] md:text-[3.75rem] lg:text-[4rem] font-bold">90%</p>
-						<p class="text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6 font-medium">of page load performance.</p>
-					</div>
-			</div>
-		</section>
+        </section>
 
 		 <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem]">
 
@@ -421,30 +443,41 @@ import m_adhar from '../../public/m_adhar.svg';
             </div>
         </section>
 
-		<section class="section-bg-left_migoo hidden md:hidden lg:block xl:block pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem]">
-			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24">
-				<h2 class="text-2xl md:text-3xl lg:text-4xl text-center text-[#31393C] font-semibold leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem]">Our Key Integrations!</h2>
-				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-11 mt-10 md:mt-10 lg:mt-16 text-[#31393C] text-center">
-					<div class="flex flex-col items-center ">
-						<Image src={m_smartflo} alt="Call integration" width={102} height={60} />
-						<p class="my-2 md:my-3 lg:my-4 text-base md:text-lg lg:text-xl font-semibold">Call Integration</p>
-						<p class="font-normal text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6">Our integration with TATA Smart Flo allows users to access call logs and make calls directly from the ERPNext system while also getting call recording URLs.</p>
-					</div>
+        <section class="section-bg-left_migoo pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem]">
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl text-center text-[#31393C] font-semibold leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem]">Let the Numbers speak for itself!</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-11 mt-10 md:mt-14 lg:mt-16 text-[#31393C] text-center">
+                    <div class="flex flex-col items-center ">
+                            <Image src={m_smartflo} alt="Call integration" width={82} height={60} />
+                            <p class="my-2 md:my-3 lg:my-4 text-base md:text-lg lg:text-xl font-semibold">Call Integration</p>
+                            <p class="font-normal text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6">Our integration with TATA Smart Flo allows users to access call logs and make calls directly from the ERPNext system while also getting call recording URLs.</p>
+                        </div>
 
-					<div class="flex flex-col items-center ">
-						<Image src={Fast2SMS} alt="Fastsms" width={198} height={60} />
-						<p class="my-2 md:my-3 lg:my-4 text-base md:text-lg lg:text-xl font-semibold">SMS Integration</p>
-						<p class="font-normal text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6">Through integration with FAST 2 SMS, our system empowers users to send broadcast SMS messages easily and quickly.</p>
-					</div>
+                        <div class="flex flex-col items-center ">
+                            <Image src={Fast2SMS} alt="Fastsms" width={160} height={60} />
+                            <p class="my-2 md:my-3 lg:my-4 text-base md:text-lg lg:text-xl font-semibold">SMS Integration</p>
+                            <p class="font-normal text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6">Through integration with FAST 2 SMS, our system empowers users to send broadcast SMS messages easily and quickly.</p>
+                        </div>
 
-					<div class="flex flex-col items-center">
-						<Image src={m_wati} alt="Wati" width={148} height={50} />
-						<p class="my-2 md:my-3 lg:my-4 text-base md:text-lg lg:text-xl font-semibold">WhatsApp Integration</p>
-						<p class="font-normal text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6">Our integration with WATI enables sending broadcast WhatsApp templates directly from the system.</p>
-					</div>
-				</div>
-				
-				<div class="grid grid-cols-2 gap-4 px-0 md:px-0 lg:px-28 xl:px-28 lg:gap-10 xl:gap-10 mt-16 text-[#31393C] text-center">
+                        <div class="flex flex-col items-center">
+                            <Image src={m_wati} alt="Wati" width={120} height={50} />
+                            <p class="my-2 md:my-3 lg:my-4 text-base md:text-lg lg:text-xl font-semibold">WhatsApp Integration</p>
+                            <p class="font-normal text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6">Our integration with WATI enables sending broadcast WhatsApp templates directly from the system.</p>
+                        </div>
+
+                        <div class="flex flex-col items-center md:flex lg:hidden">
+                            <Image src={m_app_setu} alt="Rto&Driving integration" width={210} height={60} />
+                            <p class="my-2 md:my-3 lg:my-4 text-base md:text-lg lg:text-xl font-semibold">RTO & Driving License Integration</p>
+                            <p class="font-normal text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6">We have integrated APIs for RTO and driver license to verify vehicle details and authenticate drivers information as well.</p>
+                        </div>
+
+                        <div class="flex flex-col items-center md:flex lg:hidden">
+                            <Image src={m_adhar} alt="Aadhar integration" width={210} height={60} />
+                            <p class="my-2 md:my-3 lg:my-4 text-base md:text-lg lg:text-xl font-semibold">Aadhar Card integration</p>
+                            <p class="font-normal text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6">Our team has integrated Adhar Card verification for the KYC to ensure secure, faster, and smarter verification.</p>
+                        </div>
+            </div>
+            <div class="hidden md:hidden lg:grid grid-cols-2 gap-4 px-0 md:px-0 lg:px-28 xl:px-28 lg:gap-10 xl:gap-10 mt-16 text-[#31393C] text-center">
 
 					<div class="flex flex-col items-center ">
 						<Image src={m_app_setu} alt="Rto&Driving integration" width={259} height={60} />
@@ -458,45 +491,7 @@ import m_adhar from '../../public/m_adhar.svg';
 						<p class="font-normal text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6">Our team has integrated Adhar Card verification for the KYC to ensure secure, faster, and smarter verification.</p>
 					</div>
 				</div>
-			</div>
-		</section>
-
-		<section class="block md:block lg:hidden xl:hidden pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem]">
-			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24">
-				<h2 class="text-2xl md:text-3xl lg:text-4xl text-center text-[#31393C] font-semibold leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem]">Our Key Integrations!</h2>
-				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 	gap-11 mt-10 md:mt-10 lg:mt-16 text-[#31393C] text-center">
-					<div class="flex flex-col items-center ">
-						<Image src={m_smartflo} alt="Call integration" width={82} height={60} />
-						<p class="my-2 md:my-3 lg:my-4 text-base md:text-lg lg:text-xl font-semibold">Call Integration</p>
-						<p class="font-normal text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6">Our integration with TATA Smart Flo allows users to access call logs and make calls directly from the ERPNext system while also getting call recording URLs.</p>
-					</div>
-
-					<div class="flex flex-col items-center ">
-						<Image src={Fast2SMS} alt="Fastsms" width={160} height={60} />
-						<p class="my-2 md:my-3 lg:my-4 text-base md:text-lg lg:text-xl font-semibold">SMS Integration</p>
-						<p class="font-normal text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6">Through integration with FAST 2 SMS, our system empowers users to send broadcast SMS messages easily and quickly.</p>
-					</div>
-
-					<div class="flex flex-col items-center">
-						<Image src={m_wati} alt="Wati" width={120} height={50} />
-						<p class="my-2 md:my-3 lg:my-4 text-base md:text-lg lg:text-xl font-semibold">WhatsApp Integration</p>
-						<p class="font-normal text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6">Our integration with WATI enables sending broadcast WhatsApp templates directly from the system.</p>
-					</div>
-
-					<div class="flex flex-col items-center ">
-						<Image src={m_app_setu} alt="Rto&Driving integration" width={210} height={60} />
-						<p class="my-2 md:my-3 lg:my-4 text-base md:text-lg lg:text-xl font-semibold">RTO & Driving License Integration</p>
-						<p class="font-normal text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6">We have integrated APIs for RTO and driver license to verify vehicle details and authenticate drivers information as well.</p>
-					</div>
-
-					<div class="flex flex-col items-center">
-						<Image src={m_adhar} alt="Aadhar integration" width={210} height={60} />
-						<p class="my-2 md:my-3 lg:my-4 text-base md:text-lg lg:text-xl font-semibold">Aadhar Card integration</p>
-						<p class="font-normal text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6">Our team has integrated Adhar Card verification for the KYC to ensure secure, faster, and smarter verification.</p>
-					</div>
-				</div>
-			</div>
-		</section>
+        </section>
 
 		<section class="pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem]">
 			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24">
