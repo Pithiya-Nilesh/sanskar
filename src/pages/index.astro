@@ -3403,47 +3403,32 @@ import form_bg from "../../public/form-bg.svg";
 	// });
 
 	//scroll autometic when slide is active construction or manufacturing
-	logElementsWithAriaCurrent();
-	function logElementsWithAriaCurrent() {
-		// Find elements with aria-current="true"
-		const elementsWithAriaCurrent = document.querySelectorAll(
-			'[aria-current="true"]'
-		);
+	document.addEventListener("DOMContentLoaded", function () {
+		setInterval(logElementsWithAriaCurrent, 1000);
+});
 
-		// Log elements to the console
-		elementsWithAriaCurrent.forEach((element) => {
-			console.log(element.innerHTML);
-			// if (element.innerHTML === 'Rental'){
-			if (element.innerHTML === "Construction") {
-				const containerElement =
-					document.getElementById("scrollContainer");
-				const scrollAmount = containerElement.offsetWidth;
-				// const scrollAmount = 400
-				console.log("next", scrollAmount);
-				containerElement.scrollBy({
-					top: 0,
-					left: scrollAmount,
-					behavior: "smooth",
-				});
-			}
-			// if (element.innerHTML === "Ayurveda"){
-			if (element.innerHTML === "Manufacturing") {
-				const containerElement =
-					document.getElementById("scrollContainer");
-				const scrollAmount = -containerElement.offsetWidth;
-				console.log("pre", scrollAmount);
-				containerElement.scrollBy({
-					top: 0,
-					left: scrollAmount,
-					behavior: "smooth",
-				});
-				// window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-			}
-		});
-	}
+function logElementsWithAriaCurrent() {
+  const elementsWithAriaCurrent = document.querySelectorAll('[aria-current="true"]');
 
-	// customer review slider
-	setInterval(logElementsWithAriaCurrent, 1000);
+  let previousElement = null;
+
+  elementsWithAriaCurrent.forEach((element) => {
+    console.log("previous element", previousElement);
+    console.log("current element", element);
+
+    if (previousElement && previousElement.innerHTML === element.innerHTML) {
+      console.log("elements match");
+      console.log("previous element innerHTML", previousElement.innerHTML);
+      console.log("current element innerHTML", element.innerHTML);
+    } else {
+      console.log("elements do not match");
+      // Perform any action you want for non-matching elements here.
+    }
+
+    previousElement = element;
+  });
+}
+
 
 	// Get the slider elements
 	const slider = document.querySelector(".c_slider");
