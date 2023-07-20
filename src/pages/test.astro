@@ -1,37 +1,62 @@
----
-import { Image, Picture } from "@astrojs/image/components";
-import Layout from "../layouts/Layout.astro";
-import c_slider1 from "../../public/c_slider1.svg";
-import c_slider2 from "../../public/c_slider2.svg";
-import c_slider3 from "../../public/c_slider3.svg";
----
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navigation Bar with Submenu Dropdown (Tailwind CSS)</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="bg-gray-800 text-white p-4">
+    <ul id="main-menu" class="flex space-x-4">
+      <li><a href="#" class="hover:text-gray-300">Home</a></li>
+      <li class="relative">
+        <a href="#" class="hover:text-gray-300">Products</a>
+        <ul class="sub-menu absolute left-0 top-10 bg-gray-700 p-2 hidden">
+          <li><a href="#" class="hover:text-gray-300">Product 1</a></li>
+          <li><a href="#" class="hover:text-gray-300">Product 2</a></li>
+          <li><a href="#" class="hover:text-gray-300">Product 3</a></li>
+        </ul>
+      </li>
+      <li class="relative">
+        <a href="#" class="hover:text-gray-300">Services</a>
+        <ul class="sub-menu absolute left-0 top-10 bg-gray-700 p-2 hidden">
+          <li><a href="#" class="hover:text-gray-300">Service 1</a></li>
+          <li><a href="#" class="hover:text-gray-300">Service 2</a></li>
+          <li><a href="#" class="hover:text-gray-300">Service 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+    </ul>
+  </nav>
 
-<Layout title="test">
-    <div class="industry-thumb-slider">
-        <div id="industry" class="slider-nav-items" style="display: flex;">
+  <script>
+    // JavaScript code will go here
+  </script>
 
-            <div style="min-width:127px; display: flex; justify-content: center;"
-                class="nav-item">Retail</div>
+<!-- ... Rest of the HTML ... -->
 
-            <div style="min-width:127px; display: flex; justify-content: center;"
-                class="nav-item">Fintech</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const mainMenuItems = document.querySelectorAll("#main-menu > li");
 
-            <div style="min-width:127px; display: flex; justify-content: center;"
-                class="nav-item">Insurance</div>
+    mainMenuItems.forEach(function (menuItem) {
+      const submenu = menuItem.querySelector(".sub-menu");
+      let hideTimeout;
 
-            <div style="min-width:127px; display: flex; justify-content: center;"
-                class="nav-item">Education</div>
+      if (submenu) {
+        menuItem.addEventListener("mouseenter", function () {
+          clearTimeout(hideTimeout);
+          submenu.style.display = "block";
+        });
 
-            <div style="min-width:127px; display: flex; justify-content: center;"
-                class="nav-item">Healthcare</div>
+        menuItem.addEventListener("mouseleave", function () {
+          hideTimeout = setTimeout(function () {
+            submenu.style.display = "none";
+          }, 2000); // 2-second delay
+        });
+      }
+    });
+  });
+</script>
 
-            <div style="min-width:127px; display: flex; justify-content: center;"
-                class="nav-item">Travel &amp; Hospitality</div>
-
-            <div style="min-width:127px; display: flex; justify-content: center;"
-                class="nav-item">Media &amp; Entertainment</div>
-
-        </div>
-    </div>
-
-</Layout>
+</body>
+</html>

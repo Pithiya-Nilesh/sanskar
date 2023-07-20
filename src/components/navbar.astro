@@ -1,7 +1,8 @@
 ---
 import { Image, Picture } from "@astrojs/image/components";
-import logo from "../../public/logo.svg";
 import '../styles.css'
+import logo from "../../public/logo.svg";
+import down_arrow from "../../public/down-arrow.svg"
 ---
 
 <nav class="border-b-2 p-5 bg-white">
@@ -282,7 +283,7 @@ import '../styles.css'
                     fill="#2A2A2D"></path>
             </svg> -->
         </a>
-        <div class="block lg:hidden mt-5 w-2/12 md:w-auto">
+        <div class="block lg:hidden mt-5 md:mt-0 w-2/12 md:w-auto">
             <button
                 class="flex items-center px-3 py-2 border rounded font-bold hover:text-black hover:border-white menu"
             >
@@ -300,16 +301,16 @@ import '../styles.css'
             class="w-full hidden lg:flex lg:items-center lg:w-auto pb-0 md:pb-4 lg:pb-0 font-semibold text-base"
             id="menu"
         >
-            <ul class="!leading-8 lg:flex-grow">
+            <ul class="!leading-8 lg:flex-grow" id="main-menu">
                 <li class="block mt-5 lg:inline-block lg:mt-0 mr-5 text-[#31393C]">
                     <span class="group relative inline-block">
-                      <a href="#" class="text-sm md:text-base" >Solutions</a>
-                      <ul class="absolute hidden group-hover:block">
+                      <span class="flex gap-1"><a href="#" class="text-sm md:text-base" >Solutions</a><Image src={down_arrow} alt="Down Arrow" /></span>
+                      <ul class="sub-menu absolute z-10 hidden lg:top-[4rem] lg:left-0 left-[6rem] top-[0.50rem] group-hover:block">
                         <li class="">
-                            <a class="whitespace-pre block bg-[#3E96F4] py-2 px-8 text-sm md:text-base" href="#">ERPNext</a>
+                            <a class="whitespace-pre block bg-[#3E96F4] hover:text-white py-2 px-8 text-sm md:text-base" href="#">ERPNext</a>
                         </li>
                         <li class="">
-                            <a class="whitespace-pre block bg-[#3E96F4] py-2 px-8 text-sm md:text-base" href="#">Service Now</a>
+                            <a class="whitespace-pre block bg-[#3E96F4] hover:text-white py-2 px-8 text-sm md:text-base" href="#">Service Now</a>
                         </li>
                       </ul>
                     </span>
@@ -317,16 +318,31 @@ import '../styles.css'
 
                 <li class="block lg:inline-block lg:mt-0 mr-5 text-[#31393C]">
                     <span class="group relative inline-block">
-                      <a href="#" class="text-sm md:text-base">Industries</a>
-                      <ul class="absolute hidden group-hover:block">
+                        <span class="flex gap-1"><a href="#" class="text-sm md:text-base">Industries</a><Image src={down_arrow} alt="Down Arrow" /></span>
+                      <ul class="sub-menu absolute z-10 hidden lg:top-[4rem] lg:left-0 left-[6rem] top-[0.50rem] group-hover:block overflowx-x-hidden">
                         <li class="">
-                            <a class="whitespace-pre block bg-[#3E96F4] py-2 px-8 text-sm md:text-base" href="/manufacturing">Manufacturing</a>
+                            <a class="whitespace-pre block bg-[#3E96F4] hover:text-white py-2 lg:px-8 px-5 text-sm md:text-base" href="/manufacturing">Manufacturing</a>
                         </li>
                         <li class="">  
-                            <a class="whitespace-pre block bg-[#3E96F4] py-2 px-8 text-sm md:text-base" href="#">Account</a>
+                            <a class="whitespace-pre block bg-[#3E96F4] hover:text-white py-2 lg:px-8 px-5 text-sm md:text-base" href="#">Textile</a>
+                        </li>
+                        <li class="">  
+                            <a class="whitespace-pre block bg-[#3E96F4] hover:text-white py-2 lg:px-8 px-5 text-sm md:text-base" href="#">Healthcare</a>
+                        </li>
+                        <li class="">  
+                            <a class="whitespace-pre block bg-[#3E96F4] hover:text-white py-2 lg:px-8 px-5 text-sm md:text-base" href="#">Retail</a>
+                        </li>
+                        <li class="">  
+                            <a class="whitespace-pre block bg-[#3E96F4] hover:text-white py-2 lg:px-8 px-5 text-sm md:text-base" href="#">Construction</a>
+                        </li>
+                        <li class="">  
+                            <a class="whitespace-pre block bg-[#3E96F4] hover:text-white py-2 lg:px-8 px-5 text-sm md:text-base" href="#">Crowdfunding</a>
                         </li>
                         <li class="">
-                            <a class="whitespace-pre block bg-[#3E96F4] py-2 px-8 text-sm md:text-base" href="#">Hr & Payroll</a>
+                            <a class="whitespace-pre block bg-[#3E96F4] hover:text-white py-2 lg:px-8 px-5 text-sm md:text-base" href="#">Human Resources</a>
+                        </li>
+                        <li class="">  
+                            <a class="whitespace-pre block bg-[#3E96F4] hover:text-white py-2 lg:px-8 px-5 text-sm md:text-base" href="#">Ayurveda</a>
                         </li>
                       </ul>
                     </span>
@@ -379,4 +395,26 @@ import '../styles.css'
     // div.forEach((div) => {
     //   div.
     // });
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const mainMenuItems = document.querySelectorAll("#main-menu > li");
+
+    mainMenuItems.forEach(function (menuItem) {
+      const submenu = menuItem.querySelector(".sub-menu");
+      let hideTimeout;
+
+      if (submenu) {
+        menuItem.addEventListener("mouseenter", function () {
+          clearTimeout(hideTimeout);
+          submenu.style.display = "block";
+        });
+
+        menuItem.addEventListener("mouseleave", function () {
+          hideTimeout = setTimeout(function () {
+            submenu.style.display = "none";
+          }, 150); // 2-second delay
+        });
+      }
+    });
+  });
 </script>
